@@ -3,6 +3,11 @@
     "title": "Portfolio",
     "description": "This is my personal portfolio website"
   },
+  "Languages": {
+    "title": "Languages",
+    "en": "English",
+    "es": "Spanish"
+  },
   "HomePage": {
     "title": "Hello world!",
     "about": "Go to the about page"

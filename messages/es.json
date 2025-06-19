@@ -3,6 +3,11 @@
     "title": "Mi proyecto personal",
     "description": "Este es el sitio web de mi proyecto personal"
   },
+  "Languages": {
+    "title": "Idiomas",
+    "en": "Inglés",
+    "es": "Español"
+  },
   "HomePage": {
     "title": "¡Hola, mundo!",
     "about": "Ir a la página de información"
