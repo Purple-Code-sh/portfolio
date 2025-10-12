@@ -79,18 +79,21 @@ export default function LanguageSelector() {
   }
 
   return (
-    <div className="text-txt-300 relative" title={t("title")}>
+    <div
+      className="text-txt-300 relative flex justify-end sh-container"
+      title={t("title")}
+    >
       {/* Botón principal */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="hover:bg-primary-200 flex cursor-pointer items-center space-x-2 rounded-full border border-white/25 px-4 py-2 backdrop-blur-2xl transition-colors duration-300"
+        className="hover:bg-neutral-700 bg-black flex cursor-pointer items-center space-x-2 rounded-full border border-white/25 px-4 py-2 backdrop-blur-2xl transition-colors duration-300"
       >
-        <currentLanguage.Flag className="h-5 w-5 rounded-sm" />
+        <currentLanguage.Flag className="h-4 w-auto" />
         <span className="text-sm font-medium text-white capitalize">
           {currentLanguage.code}
         </span>
         <ChevronDown
-          className={`h-5 w-5 font-bold text-white transition-transform ${
+          className={`h-4 w-auto font-bold text-white transition-transform ${
             isOpen ? "rotate-180" : ""
           }`}
         />
@@ -98,7 +101,7 @@ export default function LanguageSelector() {
 
       {/* Menú desplegable */}
       {isOpen && (
-        <div className="absolute top-full z-50 mt-1 w-full rounded-lg border bg-white/20 py-1 shadow-lg backdrop-blur">
+        <div className="absolute top-full z-50 mt-1 w-fit rounded-lg border bg-black py-1 shadow-lg backdrop-blur">
           {languages.map((language) => {
             const { Flag } = language;
             const isCurrentLanguage = locale === language.code;
@@ -108,7 +111,7 @@ export default function LanguageSelector() {
                 key={language.code}
                 onClick={() => onLanguageChange(language.code)}
                 disabled={isCurrentLanguage}
-                className={`hover:bg-primary-200 flex w-full cursor-pointer items-center space-x-2 px-4 py-2 text-white transition-colors duration-300 ${
+                className={`hover:bg-neutral-700 flex w-full cursor-pointer items-center space-x-2 px-4 py-2 text-white transition-colors duration-300 ${
                   isCurrentLanguage
                     ? "bg-white/10 cursor-not-allowed opacity-75"
                     : ""
@@ -132,7 +135,7 @@ export default function LanguageSelector() {
               <hr className="my-1 border-white/20" />
               <button
                 onClick={resetAutoDetection}
-                className="hover:bg-primary-200 flex w-full cursor-pointer items-center space-x-2 px-4 py-2 text-white/70 transition-colors duration-300"
+                className="hover:bg-neutral-700 flex w-full cursor-pointer items-center space-x-2 px-4 py-2 text-white transition-colors duration-300"
                 title="Resetear y usar detección automática"
               >
                 <span className="text-xs">🌍 Auto-detectar</span>

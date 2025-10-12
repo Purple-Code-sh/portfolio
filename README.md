@@ -1,7 +1,7 @@
 Project structure:
 
 ```
-sh-portfolio
+portfolio
 ├─ eslint.config.mjs
 ├─ messages
 │  ├─ en.json
@@ -24,13 +24,24 @@ sh-portfolio
 │  │  ├─ layout.tsx
 │  │  ├─ not-found.tsx
 │  │  └─ [locale]
+│  │     ├─ components
+│  │     │  └─ PagesCreated.tsx
+│  │     ├─ landings
+│  │     │  ├─ index.html
+│  │     │  └─ mxencuestas
 │  │     ├─ layout.tsx
 │  │     └─ page.tsx
+│  ├─ components
+│  │  ├─ ChangeLanguage.tsx
+│  │  ├─ DebugLanguageDetector.tsx
+│  │  └─ LanguageDetector.tsx
 │  ├─ i18n
 │  │  ├─ navigation.ts
 │  │  ├─ request.ts
 │  │  └─ routing.ts
-│  └─ middleware.ts
+│  ├─ middleware.ts
+│  └─ utils
+│     └─ localeUtils.ts
 └─ tsconfig.json
 
 ```

@@ -1,0 +1,1839 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inicio | xyberno.com</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://cdn.lightsplaza.com/encuestas-assets/logo.webp"
+      type="image/png"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.lightsplaza.com/encuesta-src/main.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.lightsplaza.com/encuesta-src/style.css"
+    />
+
+    <!-- Swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.lightsplaza.com/encuesta-src/swiper.js"
+      defer=""
+    ></script>
+  </head>
+
+  <body class="pt-32 text-txt bg-white">
+    <!-- Navbar -->
+    <header
+      class="fixed top-0 z-50 grid w-full place-items-center overflow-x-hidden bg-white shadow-sm"
+    >
+      <nav
+        id="nav_scroll"
+        class="container mx-auto flex h-[100px] max-w-6xl items-center justify-between px-6 py-4 transition-all duration-300 ease-in-out md:px-8 xl:px-0"
+      >
+        <a href="#" class="flex items-center">
+          <img
+            src="https://cdn.lightsplaza.com/encuestas-assets/logo.webp"
+            alt="Logo"
+            class="h-10 w-auto"
+          />
+        </a>
+        <button class="mobile-menu-button md:hidden">
+          <span
+            class="h-1 w-6 rounded bg-black transition-transform duration-300"
+          ></span>
+          <span
+            class="h-1 w-6 rounded bg-black transition-transform duration-300"
+          ></span>
+          <span
+            class="h-1 w-6 rounded bg-black transition-transform duration-300"
+          ></span>
+        </button>
+        <ul class="hidden items-center gap-6 md:flex">
+          <li>
+            <a href="#hero" class="font-medium hover:underline">Inicio</a>
+          </li>
+          <li>
+            <a href="#como-funciona" class="font-medium hover:underline"
+              >Cómo funciona</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <article
+        class="flex h-[70px] w-full items-center overflow-x-hidden border-[1px] border-[#EEEEEE] py-2"
+        style="overflow-y: hidden"
+      >
+        <div class="container mx-auto flex max-w-6xl gap-6 px-4">
+          <div class="flex min-w-max grow items-center gap-3">
+            <div class="breathe size-2 rounded-full bg-[#73CF11]"></div>
+            <span class="hidden text-sm font-bold md:block lg:text-[15px]"
+              >Pagos en directo</span
+            >
+          </div>
+
+          <div class="swiper-stocks swiper relative flex grow-0">
+            <div
+              class="pointer-events-none absolute right-0 top-0 z-30 hidden h-full w-20 bg-[linear-gradient(to_left,white,transparent)] sm:block"
+            ></div>
+
+            <div class="swiper-wrapper py-2" id="swiperWrapper"></div>
+          </div>
+        </div>
+      </article>
+    </header>
+
+    <div
+      class="relative mt-[10px] bg-[url(https://cdn.lightsplaza.com/encuestas-assets/hero/gradient-bg.webp)] bg-cover bg-right-top bg-no-repeat pt-[80px]"
+    >
+      <div
+        class="pointer-events-none absolute bottom-0 left-0 z-30 hidden h-[80px] w-full bg-gradient-to-b from-transparent to-white lg:block"
+      ></div>
+      <!-- Hero Section -->
+      <section
+        class="container mx-auto mb-8 flex h-max max-w-6xl flex-col gap-8 px-5 md:mb-10 lg:flex-row lg:px-6 xl:mb-14 xl:px-0"
+        id="hero"
+      >
+        <article class="flex w-full flex-col gap-4 lg:w-1/2">
+          <h1
+            class="text-center text-3xl/none font-bold sm:text-4xl/none md:text-[40px]/none lg:text-start lg:text-[45px]/none xl:text-[55px]/none"
+          >
+            <span>Gana dinero</span>
+            por hacer encuestas gratuitas
+          </h1>
+
+          <p
+            class="text-center text-base text-txt md:text-xl lg:text-start xl:text-[22px]/snug"
+          >
+            Tus opiniones son valiosas, y las empresas están dispuestas a pagar
+            por ellas. ¡Gana dinero hoy mismo!
+          </p>
+
+          <div class="mt-12 hidden flex-col gap-6 lg:flex">
+            <div class="flex w-full max-w-[480px] items-start gap-4">
+              <img
+                src="https://cdn.lightsplaza.com/encuestas-assets/hero/encuesta.webp"
+                class="size-8 object-contain"
+                alt=""
+              />
+
+              <div class="flex flex-col gap-1">
+                <h5 class="text-xl font-semibold text-[#202223]">
+                  ¡Gana hasta $98 por encuesta!
+                </h5>
+
+                <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
+                  <h6 class="font-medium text-[#616161]">
+                    317 Encuestas disponibles en
+                  </h6>
+
+                  <div
+                    class="flex w-max items-center gap-2 rounded-full bg-[#DCEBFB] px-3 py-1.5"
+                  >
+                    <img src="https://flagcdn.com/16x12/mx.webp" alt="" />
+                    <span class="font-semibold text-[#202223]">México</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="flex w-full max-w-[480px] items-start gap-4">
+              <img
+                src="https://cdn.lightsplaza.com/encuestas-assets/hero/moneda.webp"
+                class="size-8 object-contain"
+                alt=""
+              />
+
+              <div class="flex flex-col gap-1">
+                <h5 class="text-xl font-semibold text-[#202223]">
+                  El usuario medio ganó ayer $222
+                </h5>
+
+                <h6 class="font-medium text-[#616161]">
+                  Cobro en efectivo de $97
+                </h6>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="flex w-full lg:w-1/2">
+          <div
+            class="mx-auto flex w-full max-w-[480px] flex-col gap-4 rounded-xl bg-white p-4 shadow-[0px_2px_8px_0px_#0000001A]"
+          >
+            <section
+              class="flex items-center justify-between rounded-full bg-[#EBF4FE] p-2"
+            >
+              <img
+                src="https://cdn.lightsplaza.com/encuestas-assets/hero/regalo.webp"
+                alt="Regalo Icono"
+                class="h-6 w-auto flex-grow object-contain"
+              />
+              <h3
+                class="flex-grow text-center text-xs font-medium text-primary lg:text-sm"
+              >
+                Regístrate y consigue
+                <br class="md:hidden" />
+                <span class="font-semibold">$1 ¡BONO GRATUITO!</span>
+              </h3>
+
+              <div class="flex flex-grow"></div>
+            </section>
+
+            <h2 class="text-center text-xl font-bold">Regístrate</h2>
+
+            <form
+              id="contactForm1"
+              action=""
+              class="contact-form gap-6 rounded-b-lg bg-[#FFFFFF] xl:flex-col"
+            >
+              <div class="w-full">
+                <div class="flex flex-wrap">
+                  <article class="flex w-full flex-col gap-6">
+                    <div class="grid w-full gap-5">
+                      <!-- Full Name -->
+                      <div>
+                        <input
+                          type="text"
+                          name="name"
+                          placeholder="Nombre"
+                          class="font-poppins w-full rounded-md border border-gray-300 px-3 py-3 text-sm placeholder:font-medium focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                        <div
+                          id="name-error-1"
+                          class="mt-1 hidden text-xs text-red-500"
+                        ></div>
+                      </div>
+
+                      <!-- Full Name -->
+                      <div>
+                        <input
+                          type="text"
+                          name="lastName"
+                          placeholder="Apellido"
+                          class="font-poppins w-full rounded-md border border-gray-300 px-3 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                        <div
+                          id="lastName-error-1"
+                          class="mt-1 hidden text-xs text-red-500"
+                        ></div>
+                      </div>
+
+                      <!-- Email -->
+                      <div>
+                        <input
+                          type="email"
+                          name="email"
+                          placeholder="Correo Electrónico"
+                          class="font-poppins w-full rounded-md border border-gray-300 px-3 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        />
+                        <div
+                          id="email-error-1"
+                          class="mt-1 hidden text-xs text-red-500"
+                        ></div>
+                      </div>
+
+                      <!-- Phone -->
+                      <div
+                        class="phone-container relative z-10 w-full"
+                        id="phone-container-1"
+                      >
+                        <div
+                          class="flex w-full overflow-hidden rounded-md border border-gray-300"
+                        >
+                          <button
+                            type="button"
+                            id="country-selector"
+                            class="country-selector flex cursor-pointer items-center space-x-1 border-r border-gray-300 bg-white px-3 py-3"
+                          >
+                            <img
+                              class="selected-flag size-4 rounded-sm object-contain"
+                              src="https://flagcdn.com/16x12/cl.webp"
+                              alt="Chile"
+                            />
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              class="h-4 w-4 text-gray-500"
+                              viewBox="0 0 20 20"
+                              fill="currentColor"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                clip-rule="evenodd"
+                              ></path>
+                            </svg>
+                          </button>
+                          <input
+                            type="tel"
+                            name="phone"
+                            placeholder="Número de teléfono"
+                            class="font-poppins w-full flex-1 px-3 py-3 text-sm focus:outline-none"
+                          />
+                        </div>
+                        <div
+                          id="phone-error-1"
+                          class="mt-1 hidden text-xs text-red-500"
+                        ></div>
+
+                        <div
+                          class="country-dropdown font-poppins absolute left-0 top-full z-10 mt-1 hidden max-h-60 w-64 overflow-y-auto rounded-md border border-gray-300 bg-white text-sm shadow-lg"
+                        ></div>
+                      </div>
+
+                      <!-- Country -->
+                      <div class="relative w-full">
+                        <select
+                          name="country"
+                          class="font-poppins w-full appearance-none rounded-md border border-black/20 border-gray-300 bg-[url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E')] bg-[length:0.7em] bg-[right_0.7em_center] bg-no-repeat px-3 py-3 text-sm font-normal outline-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        >
+                          <option value="" disabled="" selected="">
+                            Selecciona tu país
+                          </option>
+                          <option value="cl">Chile</option>
+                          <option value="mx">Mexico</option>
+                          <option value="us">EE.UU</option>
+                          <option value="ca">Canadá</option>
+                          <option value="ar">Argentina</option>
+                          <option value="co">Colombia</option>
+                          <option value="pe">Perú</option>
+                          <option value="br">Brasil</option>
+                          <option value="py">Paraguay</option>
+                          <option value="bo">Bolivia</option>
+                          <option value="ec">Ecuador</option>
+                          <option value="ve">Venezuela</option>
+                        </select>
+                        <div
+                          id="country-error-1"
+                          class="mt-1 hidden text-xs text-red-500"
+                        ></div>
+                      </div>
+                    </div>
+                  </article>
+                </div>
+              </div>
+
+              <button
+                type="submit"
+                id="btn-registro"
+                class="submit-button font-poppins mt-6 w-full rounded-lg bg-primary px-1.5 py-3 text-sm font-bold text-white transition-all duration-200 hover:scale-105"
+              >
+                Continúa en
+              </button>
+
+              <article
+                class="mt-9 flex w-full flex-wrap items-center justify-center gap-6 border-t-[1px] border-[#EEEEEE] pt-5"
+              >
+                <img
+                  src="https://cdn.lightsplaza.com/encuestas-assets/hero/trust.webp"
+                  class="max-h-[100px] w-full object-contain"
+                  alt="Métodos de Pago"
+                  title="Métodos de Pago"
+                />
+              </article>
+            </form>
+          </div>
+        </article>
+
+        <article
+          class="flex w-full flex-col items-center justify-center gap-6 border-t-[1px] border-[#EEEEEE] pt-5 lg:hidden"
+        >
+          <div class="flex w-full max-w-[480px] items-start gap-4">
+            <img
+              src="https://cdn.lightsplaza.com/encuestas-assets/hero/encuesta.webp"
+              class="size-8 object-contain"
+              alt=""
+            />
+
+            <div class="flex flex-col gap-1">
+              <h5 class="font-semibold text-[#202223]">
+                ¡Gana hasta $98 por encuesta!
+              </h5>
+
+              <div class="flex flex-col gap-4 sm:flex-row sm:items-center">
+                <h6 class="text-sm font-medium text-[#616161]">
+                  317 Encuestas disponibles en
+                </h6>
+
+                <div
+                  class="flex w-max items-center gap-0.5 rounded-full bg-[#DCEBFB] px-3 py-1.5"
+                >
+                  <img src="https://flagcdn.com/16x12/mx.webp" alt="" />
+                  <span class="font-semibold text-[#202223]">México</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex w-full max-w-[480px] items-start gap-4">
+            <img
+              src="https://cdn.lightsplaza.com/encuestas-assets/hero/moneda.webp"
+              class="size-8 object-contain"
+              alt=""
+            />
+
+            <div class="flex flex-col gap-1">
+              <h5 class="font-semibold text-[#202223]">
+                El usuario medio ganó ayer $222
+              </h5>
+
+              <h6 class="text-sm font-medium text-[#616161]">
+                Cobro en efectivo de $97
+              </h6>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Partners Section -->
+      <section
+        class="container relative z-40 mx-auto mb-8 hidden max-w-6xl px-8 py-6 md:mb-10 lg:block lg:px-6 xl:mb-14 xl:px-0"
+      >
+        <!-- Header -->
+        <div class="mb-12 text-center">
+          <p
+            class="text-balance text-base font-medium text-primary-dark lg:text-lg"
+          >
+            Simplemente expresando tus opiniones sobre temas de actualidad, qué
+            detergente utilizas o qué serie de televisión prefieres ver, puedes
+            llevarte un dinero extra al bolsillo con sólo utilizar una
+            aplicación de encuestas de pago.
+          </p>
+        </div>
+
+        <div
+          class="flex flex-wrap items-center justify-center gap-6 md:gap-8 lg:gap-10 xl:gap-12"
+        >
+          <img
+            src="https://cdn.lightsplaza.com/encuestas-assets/paypal.webp"
+            alt="Partner 1"
+            class="h-auto w-24"
+          />
+          <img
+            src="https://cdn.lightsplaza.com/encuestas-assets/paypal.webp"
+            alt="Partner 2"
+            class="h-auto w-24"
+          />
+          <img
+            src="https://cdn.lightsplaza.com/encuestas-assets/inova.webp"
+            alt="Partner 3"
+            class="h-auto w-24"
+          />
+          <img
+            src="https://cdn.lightsplaza.com/encuestas-assets/freefire.webp"
+            alt="Partner 4"
+            class="h-auto w-24"
+          />
+          <img
+            src="https://cdn.lightsplaza.com/encuestas-assets/cinemex.webp"
+            alt="Partner 5"
+            class="h-auto w-24"
+          />
+          <img
+            src="https://cdn.lightsplaza.com/encuestas-assets/cinemex.webp"
+            alt="Partner 6"
+            class="h-auto w-24"
+          />
+          <img
+            src="https://cdn.lightsplaza.com/encuestas-assets/cinemex.webp"
+            alt="Partner 7"
+            class="h-auto w-24"
+          />
+          <img
+            src="https://cdn.lightsplaza.com/encuestas-assets/cinemex.webp"
+            alt="Partner 8"
+            class="h-auto w-24"
+          />
+        </div>
+      </section>
+    </div>
+
+    <!-- Partners Section -->
+    <section
+      class="container mx-auto mb-8 max-w-6xl px-8 md:mb-10 lg:hidden lg:px-6 xl:mb-14 xl:px-0"
+    >
+      <!-- Header -->
+      <div class="mb-12 text-center">
+        <p
+          class="text-balance text-base font-medium text-primary-dark lg:text-lg"
+        >
+          Simplemente expresando tus opiniones sobre temas de actualidad, qué
+          detergente utilizas o qué serie de televisión prefieres ver, puedes
+          llevarte un dinero extra al bolsillo con sólo utilizar una aplicación
+          de encuestas de pago.
+        </p>
+      </div>
+
+      <div
+        class="flex flex-wrap items-center justify-center gap-6 md:gap-8 lg:gap-10 xl:gap-12"
+      >
+        <img
+          src="https://cdn.lightsplaza.com/encuestas-assets/paypal.webp"
+          alt="Partner 1"
+          class="h-auto w-24"
+        />
+        <img
+          src="https://cdn.lightsplaza.com/encuestas-assets/paypal.webp"
+          alt="Partner 2"
+          class="h-auto w-24"
+        />
+        <img
+          src="https://cdn.lightsplaza.com/encuestas-assets/inova.webp"
+          alt="Partner 3"
+          class="h-auto w-24"
+        />
+        <img
+          src="https://cdn.lightsplaza.com/encuestas-assets/freefire.webp"
+          alt="Partner 4"
+          class="h-auto w-24"
+        />
+        <img
+          src="https://cdn.lightsplaza.com/encuestas-assets/cinemex.webp"
+          alt="Partner 5"
+          class="h-auto w-24"
+        />
+        <img
+          src="https://cdn.lightsplaza.com/encuestas-assets/cinemex.webp"
+          alt="Partner 6"
+          class="h-auto w-24"
+        />
+        <img
+          src="https://cdn.lightsplaza.com/encuestas-assets/cinemex.webp"
+          alt="Partner 7"
+          class="h-auto w-24"
+        />
+        <img
+          src="https://cdn.lightsplaza.com/encuestas-assets/cinemex.webp"
+          alt="Partner 8"
+          class="h-auto w-24"
+        />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="mb-8 md:mb-10 xl:mb-14">
+      <div
+        class="container mx-auto max-w-6xl rounded-3xl bg-primary-light p-6 md:py-16"
+      >
+        <!-- Header -->
+        <div class="mb-4 text-center">
+          <h2 class="mb-4 text-2xl font-semibold text-primary-dark md:text-3xl">
+            Gana dinero haciendo encuestas en
+            <span class="text-primary">México</span>
+          </h2>
+          <p class="text-sm text-txt-light md:text-base">
+            Gana dinero por Internet realizando encuestas apasionantes en
+            xyberno.com.
+            <br />
+            Retira dinero en efectivo o tarjetas de regalo y recíbelos
+            inmediatamente
+          </p>
+        </div>
+
+        <section
+          class="grid max-w-6xl place-items-baseline gap-4 lg:grid-cols-3"
+        >
+          <div class="w-full rounded-2xl p-4">
+            <img
+              src="https://cdn.lightsplaza.com/encuestas-assets/about-1.webp"
+              alt="Placeholder Image"
+              class="mx-auto mb-6 h-auto w-full max-w-[280px] rounded-lg object-cover"
+            />
+            <div
+              class="mx-auto w-fit rounded-full border border-primary/50 px-3 py-1 text-center text-sm font-semibold text-primary lg:text-base"
+            >
+              Paso 1
+            </div>
+            <p class="pt-3 text-center text-xl font-bold">Inscríbete</p>
+            <p class="text-center text-sm text-txt-light md:text-base">
+              Regístrate gratis
+            </p>
+          </div>
+          <div class="w-full rounded-2xl p-4">
+            <img
+              src="https://cdn.lightsplaza.com/encuestas-assets/about-2.webp"
+              alt="Placeholder Image"
+              class="mx-auto mb-6 h-auto w-full max-w-[280px] rounded-lg object-cover"
+            />
+            <div
+              class="mx-auto w-fit rounded-full border border-primary/50 px-3 py-1 text-center text-sm font-semibold text-primary lg:text-base"
+            >
+              Paso 2
+            </div>
+            <p class="pt-3 text-center text-xl font-bold">Haz encuestas</p>
+            <p class="text-center text-sm text-txt-light md:text-base">
+              Selecciona la encuesta que quieras
+            </p>
+          </div>
+          <div class="w-full rounded-2xl p-4">
+            <img
+              src="https://cdn.lightsplaza.com/encuestas-assets/about-3.webp"
+              alt="Placeholder Image"
+              class="mx-auto mb-6 h-auto w-full max-w-[280px] rounded-lg object-cover"
+            />
+            <div
+              class="mx-auto w-fit rounded-full border border-primary/50 px-3 py-1 text-center text-sm font-semibold text-primary lg:text-base"
+            >
+              Paso 3
+            </div>
+            <p class="pt-3 text-center text-xl font-bold">Cobrar</p>
+            <p class="text-center text-sm text-txt-light md:text-base">
+              Retira dinero en efectivo o canjéalo en 31+ recompensas
+            </p>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Recompensas Section -->
+    <section
+      id="como-funciona"
+      class="container mx-auto mb-8 max-w-6xl px-8 md:mb-10 lg:px-6 xl:mb-14 xl:px-0"
+    >
+      <!-- Header -->
+      <div class="mb-12 text-center">
+        <h2 class="mb-4 text-2xl font-bold text-primary-dark md:text-3xl">
+          Elige entre más de 31 recompensas
+        </h2>
+        <p class="text-sm text-txt-light md:text-base">
+          Retira dinero en efectivo a través de PayPal o elige entre cientos de
+          tarjetas de regalo diferentes
+        </p>
+      </div>
+
+      <section class="flex h-max flex-col gap-4 overflow-x-hidden lg:flex-row">
+        <article
+          class="flex w-full flex-wrap justify-center gap-6 lg:w-4/12 lg:border-r-[1px] lg:border-[#EEEEEE]"
+        >
+          <div
+            class="flex w-full max-w-[350px] items-center justify-center gap-4 rounded-2xl bg-primary-light px-6 py-5 md:max-w-[300px] lg:justify-start"
+          >
+            <img
+              src="https://cdn.lightsplaza.com/encuestas-assets/rewards/efectivo.webp"
+              class="size-8 object-contain"
+              alt=""
+            />
+            <h4>Efectivo</h4>
+          </div>
+
+          <div
+            class="flex w-full max-w-[350px] items-center justify-center gap-4 rounded-2xl border-[1px] border-[#EEEEEE] bg-white px-6 py-5 md:max-w-[300px] lg:justify-start"
+          >
+            <img
+              src="https://cdn.lightsplaza.com/encuestas-assets/rewards/tarjetas-regalos.webp"
+              class="size-8 object-contain"
+              alt=""
+            />
+            <h4>Tarjetas de regalo</h4>
+          </div>
+
+          <div
+            class="flex w-full max-w-[350px] items-center justify-center gap-4 rounded-2xl border-[1px] border-[#EEEEEE] bg-white px-6 py-5 md:max-w-[300px] lg:justify-start"
+          >
+            <img
+              src="https://cdn.lightsplaza.com/encuestas-assets/rewards/tarjeta-credito.webp"
+              class="size-8 object-contain"
+              alt=""
+            />
+            <h4>Tarjeta de crédito</h4>
+          </div>
+
+          <div
+            class="flex w-full max-w-[350px] items-center justify-center gap-4 rounded-2xl border-[1px] border-[#EEEEEE] bg-white px-6 py-5 md:max-w-[300px] lg:justify-start"
+          >
+            <img
+              src="https://cdn.lightsplaza.com/encuestas-assets/rewards/donaciones.webp"
+              class="size-8 object-contain"
+              alt=""
+            />
+            <h4>Donaciones</h4>
+          </div>
+        </article>
+
+        <article class="flex w-full items-center lg:w-8/12">
+          <!-- Loader -->
+          <div class="loader-container" id="carousel-loader">
+            <div class="loader"></div>
+          </div>
+
+          <!-- Swiper Efectivo -->
+          <div class="swiper-efectivo swiper flex items-center">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide h-[500px] max-w-[300px] rounded-2xl border-[1px] border-[#EEEEEE]"
+              >
+                <article
+                  class="flex h-[300px] min-h-full w-full flex-col items-center justify-center gap-10 bg-[url('https://cdn.lightsplaza.com/encuestas-assets/rewards/bg-card-reward.webp')] bg-cover bg-center bg-no-repeat"
+                >
+                  <div
+                    class="flex flex-col items-center justify-center gap-1 text-center"
+                  >
+                    <h5 class="text-xl font-medium lg:text-2xl">$5 - $2,000</h5>
+                    <h6 class="text-xs lg:text-sm">PayPal</h6>
+                  </div>
+                  <img
+                    src="https://cdn.lightsplaza.com/encuestas-assets/paypal.webp"
+                    class="size-20 object-contain lg:size-24"
+                    alt="PayPal"
+                  />
+                </article>
+              </div>
+
+              <div
+                class="swiper-slide h-[500px] max-w-[300px] rounded-2xl border-[1px] border-[#EEEEEE]"
+              >
+                <article
+                  class="flex h-[300px] min-h-full w-full flex-col items-center justify-center gap-10 bg-[url('https://cdn.lightsplaza.com/encuestas-assets/rewards/bg-card-reward.webp')] bg-cover bg-center bg-no-repeat"
+                >
+                  <div
+                    class="flex flex-col items-center justify-center gap-1 text-center"
+                  >
+                    <h5 class="text-xl font-medium lg:text-2xl">$5 - $2,000</h5>
+                    <h6 class="text-xs lg:text-sm">PayPal</h6>
+                  </div>
+                  <img
+                    src="https://cdn.lightsplaza.com/encuestas-assets/paypal.webp"
+                    class="size-20 object-contain lg:size-24"
+                    alt="PayPal"
+                  />
+                </article>
+              </div>
+            </div>
+
+            <div class="swiper-pagination mt-2"></div>
+          </div>
+
+          <!-- Swiper Tarjeta de Regalo -->
+          <div class="swiper-tarjeta swiper flex items-center">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide h-[500px] max-w-[300px] rounded-2xl border-[1px] border-[#EEEEEE]"
+              >
+                <article
+                  class="flex h-[300px] min-h-full w-full flex-col items-center justify-center gap-10 bg-[url('https://cdn.lightsplaza.com/encuestas-assets/rewards/bg-card-reward.webp')] bg-cover bg-center bg-no-repeat"
+                >
+                  <div
+                    class="flex flex-col items-center justify-center gap-1 text-center"
+                  >
+                    <h5 class="text-xl font-medium lg:text-2xl">
+                      $100 - $2,000
+                    </h5>
+                    <h6 class="text-xs lg:text-sm">Innovasport MX</h6>
+                  </div>
+
+                  <img
+                    src="https://cdn.lightsplaza.com/encuestas-assets/rewards/logos/innovasport.webp"
+                    class="size-20 object-contain lg:size-24"
+                    alt="PayPal"
+                  />
+                </article>
+              </div>
+
+              <div
+                class="swiper-slide h-[500px] max-w-[300px] rounded-2xl border-[1px] border-[#EEEEEE]"
+              >
+                <article
+                  class="flex h-[300px] min-h-full w-full flex-col items-center justify-center gap-10 bg-[url('https://cdn.lightsplaza.com/encuestas-assets/rewards/bg-card-reward.webp')] bg-cover bg-center bg-no-repeat"
+                >
+                  <div
+                    class="flex flex-col items-center justify-center gap-1 text-center"
+                  >
+                    <h5 class="text-xl font-medium lg:text-2xl">$1 - $20</h5>
+                    <h6 class="text-xs lg:text-sm">FreeFire USD</h6>
+                  </div>
+
+                  <img
+                    src="https://cdn.lightsplaza.com/encuestas-assets/freefire.webp"
+                    class="size-20 object-contain lg:size-24"
+                    alt="PayPal"
+                  />
+                </article>
+              </div>
+
+              <div
+                class="swiper-slide h-[500px] max-w-[300px] rounded-2xl border-[1px] border-[#EEEEEE]"
+              >
+                <article
+                  class="flex h-[300px] min-h-full w-full flex-col items-center justify-center gap-10 bg-[url('https://cdn.lightsplaza.com/encuestas-assets/rewards/bg-card-reward.webp')] bg-cover bg-center bg-no-repeat"
+                >
+                  <div
+                    class="flex flex-col items-center justify-center gap-1 text-center"
+                  >
+                    <h5 class="text-xl font-medium lg:text-2xl">
+                      $100 - $2,000
+                    </h5>
+                    <h6 class="text-xs lg:text-sm">Roblox MX</h6>
+                  </div>
+
+                  <img
+                    src="https://cdn.lightsplaza.com/encuestas-assets/rewards/logos/roblox.webp"
+                    class="size-20 object-contain lg:size-24"
+                    alt="PayPal"
+                  />
+                </article>
+              </div>
+
+              <div
+                class="swiper-slide h-[500px] max-w-[300px] rounded-2xl border-[1px] border-[#EEEEEE]"
+              >
+                <article
+                  class="flex h-[300px] min-h-full w-full flex-col items-center justify-center gap-10 bg-[url('https://cdn.lightsplaza.com/encuestas-assets/rewards/bg-card-reward.webp')] bg-cover bg-center bg-no-repeat"
+                >
+                  <div
+                    class="flex flex-col items-center justify-center gap-1 text-center"
+                  >
+                    <h5 class="text-xl font-medium lg:text-2xl">
+                      $200 - $1,000
+                    </h5>
+                    <h6 class="text-xs lg:text-sm">MEX ViX Premium</h6>
+                  </div>
+
+                  <img
+                    src="https://cdn.lightsplaza.com/encuestas-assets/rewards/logos/vix.webp"
+                    class="size-20 object-contain lg:size-24"
+                    alt="PayPal"
+                  />
+                </article>
+              </div>
+
+              <div
+                class="swiper-slide h-[500px] max-w-[300px] rounded-2xl border-[1px] border-[#EEEEEE]"
+              >
+                <article
+                  class="flex h-[300px] min-h-full w-full flex-col items-center justify-center gap-10 bg-[url('https://cdn.lightsplaza.com/encuestas-assets/rewards/bg-card-reward.webp')] bg-cover bg-center bg-no-repeat"
+                >
+                  <div
+                    class="flex flex-col items-center justify-center gap-1 text-center"
+                  >
+                    <h5 class="text-xl font-medium lg:text-2xl">$150 - $500</h5>
+                    <h6 class="text-xs lg:text-sm">Librerías Gandhi</h6>
+                  </div>
+
+                  <img
+                    src="https://cdn.lightsplaza.com/encuestas-assets/rewards/logos/gandhi.webp"
+                    class="size-20 object-contain lg:size-24"
+                    alt="PayPal"
+                  />
+                </article>
+              </div>
+
+              <div
+                class="swiper-slide h-[500px] max-w-[300px] rounded-2xl border-[1px] border-[#EEEEEE]"
+              >
+                <article
+                  class="flex h-[300px] min-h-full w-full flex-col items-center justify-center gap-10 bg-[url('https://cdn.lightsplaza.com/encuestas-assets/rewards/bg-card-reward.webp')] bg-cover bg-center bg-no-repeat"
+                >
+                  <div
+                    class="flex flex-col items-center justify-center gap-1 text-center"
+                  >
+                    <h5 class="text-xl font-medium lg:text-2xl">$129 - $339</h5>
+                    <h6 class="text-xs lg:text-sm">Paramount+</h6>
+                  </div>
+
+                  <img
+                    src="https://cdn.lightsplaza.com/encuestas-assets/rewards/logos/paramount-plus.webp"
+                    class="size-20 object-contain lg:size-24"
+                    alt="PayPal"
+                  />
+                </article>
+              </div>
+
+              <div
+                class="swiper-slide h-[500px] max-w-[300px] rounded-2xl border-[1px] border-[#EEEEEE]"
+              >
+                <article
+                  class="flex h-[300px] min-h-full w-full flex-col items-center justify-center gap-10 bg-[url('https://cdn.lightsplaza.com/encuestas-assets/rewards/bg-card-reward.webp')] bg-cover bg-center bg-no-repeat"
+                >
+                  <div
+                    class="flex flex-col items-center justify-center gap-1 text-center"
+                  >
+                    <h5 class="text-xl font-medium lg:text-2xl">
+                      $100 - $2,000
+                    </h5>
+                    <h6 class="text-xs lg:text-sm">Innvictus</h6>
+                  </div>
+
+                  <img
+                    src="https://cdn.lightsplaza.com/encuestas-assets/rewards/logos/innvictus.webp"
+                    class="size-20 object-contain lg:size-24"
+                    alt="PayPal"
+                  />
+                </article>
+              </div>
+
+              <div
+                class="swiper-slide h-[500px] max-w-[300px] rounded-2xl border-[1px] border-[#EEEEEE]"
+              >
+                <article
+                  class="flex h-[300px] min-h-full w-full flex-col items-center justify-center gap-10 bg-[url('https://cdn.lightsplaza.com/encuestas-assets/rewards/bg-card-reward.webp')] bg-cover bg-center bg-no-repeat"
+                >
+                  <div
+                    class="flex flex-col items-center justify-center gap-1 text-center"
+                  >
+                    <h5 class="text-xl font-medium lg:text-2xl">
+                      $50 - $2,000
+                    </h5>
+                    <h6 class="text-xs lg:text-sm">App Store &amp; iTunes</h6>
+                  </div>
+
+                  <img
+                    src="https://cdn.lightsplaza.com/encuestas-assets/rewards/logos/itunes.webp"
+                    class="size-20 object-contain lg:size-24"
+                    alt="PayPal"
+                  />
+                </article>
+              </div>
+            </div>
+
+            <div class="swiper-pagination mt-2"></div>
+          </div>
+
+          <!-- Swiper Tarjeta de Crédito -->
+          <div class="swiper-tarjeta-credito swiper flex items-center">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide h-[500px] max-w-[300px] rounded-2xl border-[1px] border-[#EEEEEE]"
+              >
+                <article
+                  class="flex h-[300px] min-h-full w-full flex-col items-center justify-center gap-10 bg-[url('https://cdn.lightsplaza.com/encuestas-assets/rewards/bg-card-reward.webp')] bg-cover bg-center bg-no-repeat"
+                >
+                  <div
+                    class="flex flex-col items-center justify-center gap-1 text-center"
+                  >
+                    <h5 class="text-xl font-medium lg:text-2xl">$1 - $100</h5>
+                    <h6 class="text-xs lg:text-sm">Virtual Visa</h6>
+                  </div>
+
+                  <img
+                    src="https://cdn.lightsplaza.com/encuestas-assets/earnings-3.webp"
+                    class="size-20 object-contain lg:size-24"
+                    alt="PayPal"
+                  />
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <!-- Swiper Donaciones -->
+          <div class="swiper-donaciones swiper flex items-center">
+            <div class="swiper-wrapper">
+              <div
+                class="swiper-slide h-[500px] max-w-[300px] rounded-2xl border-[1px] border-[#EEEEEE]"
+              >
+                <article
+                  class="flex h-[300px] min-h-full w-full flex-col items-center justify-center gap-10 bg-[url('https://cdn.lightsplaza.com/encuestas-assets/rewards/bg-card-reward.webp')] bg-cover bg-center bg-no-repeat"
+                >
+                  <div
+                    class="flex flex-col items-center justify-center gap-1 text-center"
+                  >
+                    <h5 class="text-xl font-medium lg:text-2xl">$5 - $100</h5>
+                    <h6 class="text-xs lg:text-sm">Doctors without Borders</h6>
+                  </div>
+
+                  <img
+                    src="https://cdn.lightsplaza.com/encuestas-assets/rewards/logos/dwb.webp"
+                    class="size-20 object-contain lg:size-24"
+                    alt="PayPal"
+                  />
+                </article>
+              </div>
+
+              <div
+                class="swiper-slide h-[500px] max-w-[300px] rounded-2xl border-[1px] border-[#EEEEEE]"
+              >
+                <article
+                  class="flex h-[300px] min-h-full w-full flex-col items-center justify-center gap-10 bg-[url('https://cdn.lightsplaza.com/encuestas-assets/rewards/bg-card-reward.webp')] bg-cover bg-center bg-no-repeat"
+                >
+                  <div
+                    class="flex flex-col items-center justify-center gap-1 text-center"
+                  >
+                    <h5 class="text-xl font-medium lg:text-2xl">$5 - $100</h5>
+                    <h6 class="text-xs lg:text-sm">Save the Children</h6>
+                  </div>
+
+                  <img
+                    src="https://cdn.lightsplaza.com/encuestas-assets/rewards/logos/svc.webp"
+                    class="size-20 object-contain lg:size-24"
+                    alt="PayPal"
+                  />
+                </article>
+              </div>
+
+              <div
+                class="swiper-slide h-[500px] max-w-[300px] rounded-2xl border-[1px] border-[#EEEEEE]"
+              >
+                <article
+                  class="flex h-[300px] min-h-full w-full flex-col items-center justify-center gap-10 bg-[url('https://cdn.lightsplaza.com/encuestas-assets/rewards/bg-card-reward.webp')] bg-cover bg-center bg-no-repeat"
+                >
+                  <div
+                    class="flex flex-col items-center justify-center gap-1 text-center"
+                  >
+                    <h5 class="text-xl font-medium lg:text-2xl">$5 - $100</h5>
+                    <h6 class="text-xs lg:text-sm">
+                      International Rescue Committee
+                    </h6>
+                  </div>
+
+                  <img
+                    src="https://cdn.lightsplaza.com/encuestas-assets/rewards/logos/irc.webp"
+                    class="size-20 object-contain lg:size-24"
+                    alt="PayPal"
+                  />
+                </article>
+              </div>
+            </div>
+
+            <div class="swiper-pagination mt-2"></div>
+          </div>
+        </article>
+      </section>
+    </section>
+
+    <!-- HowItWorks Section -->
+    <section
+      id="como-funciona"
+      class="container mx-auto mb-8 max-w-6xl px-8 md:mb-10 lg:px-6 xl:mb-14 xl:px-0"
+    >
+      <!-- Header -->
+      <div class="mb-12 text-center">
+        <h2 class="mb-4 text-2xl font-bold text-primary-dark md:text-3xl">
+          Aplicación de encuestas en línea sin mínimo de pago
+        </h2>
+        <p class="text-sm text-txt-light md:text-base">
+          ¡Imagina la oportunidad de ganar cada vez que rellenas una encuesta en
+          línea!
+        </p>
+      </div>
+
+      <section class="grid gap-4 lg:grid-cols-2">
+        <div class="flex items-center justify-center gap-4">
+          <img
+            src="https://cdn.lightsplaza.com/encuestas-assets/how-it-works.webp"
+            alt="Placeholder Image"
+            class="mx-auto h-auto w-11/12 max-w-lg rounded-lg object-cover"
+          />
+        </div>
+
+        <div>
+          <div class="mb-8">
+            <h2 class="mb-4 text-xl font-bold text-primary-dark lg:text-2xl">
+              En xyberno.com nos tomamos muy en serio tus recompensas.
+            </h2>
+            <p class="text-sm text-txt-light lg:text-base">
+              Por eso tenemos un pago mínimo bajo que puedes alcanzar el mismo
+              día. Te damos el control total de las recompensas que recibes.
+            </p>
+          </div>
+          <div
+            class="mb-12 flex w-fit items-center justify-start gap-1 rounded-full bg-primary-light p-3"
+          >
+            <img
+              src="https://cdn.lightsplaza.com/encuestas-assets/cash.webp"
+              alt="Placeholder Image"
+              class="h-auto w-6 rounded-lg object-cover"
+            />
+            <p class="text-sm font-medium text-primary">
+              El encuestado medio sólo necesita 17 minutos para ser recompensado
+            </p>
+          </div>
+          <section class="mb-8 flex items-start gap-4">
+            <div
+              class="flex size-10 flex-shrink-0 items-center justify-center rounded-full bg-primary text-center text-2xl font-semibold text-white"
+            >
+              1
+            </div>
+            <div>
+              <h2 class="mb-3 text-base font-semibold lg:text-lg">
+                En primer lugar, crea una cuenta y, a continuación, selecciona
+                las encuestas remuneradas online que te interesen.
+              </h2>
+              <p class="text-sm text-txt-light lg:text-base">
+                Hay cientos de encuestas para elegir, desde juegos, compartir
+                tus hábitos de compra e incluso hablar de tus equipos deportivos
+                favoritos.
+              </p>
+            </div>
+          </section>
+
+          <section class="flex items-start gap-4">
+            <div
+              class="flex size-10 flex-shrink-0 items-center justify-center rounded-full bg-primary text-center text-2xl font-semibold text-white"
+            >
+              2
+            </div>
+            <div>
+              <h2 class="mb-3 text-base font-semibold lg:text-lg">
+                Luego, cada vez que completes una encuesta, serás recompensado
+                con nuestros puntos.
+              </h2>
+              <p class="text-sm text-txt-light lg:text-base">
+                ¡Dirígete a las recompensas y canjea tus puntos por dinero o
+                tarjetas de regalo!
+              </p>
+            </div>
+          </section>
+        </div>
+      </section>
+    </section>
+
+    <!-- Earnings Section -->
+    <section
+      class="mb-8 bg-gradient-to-b from-[#F3F6FC] to-transparent py-12 md:mb-10 xl:mb-14"
+    >
+      <section
+        class="container mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-4"
+      >
+        <div
+          class="w-full rounded-2xl border border-gray-200 bg-white p-10 md:w-[48%] xl:w-[32%]"
+        >
+          <img
+            src="https://cdn.lightsplaza.com/encuestas-assets/earnings-1.webp"
+            alt="Placeholder Image"
+            class="mx-auto h-16 w-auto rounded-lg object-cover"
+          />
+          <p class="pb-3 pt-6 text-center text-xl font-medium">
+            Gana tarjetas de regalo PayPal
+          </p>
+          <a
+            href="#"
+            class="block w-full rounded-b-2xl p-4 pt-0 text-center text-lg font-medium text-primary underline"
+            >Saber más</a
+          >
+        </div>
+        <div
+          class="w-full rounded-2xl border border-gray-200 bg-white p-10 md:w-[48%] xl:w-[32%]"
+        >
+          <img
+            src="https://cdn.lightsplaza.com/encuestas-assets/earnings-2.webp"
+            alt="Placeholder Image"
+            class="mx-auto h-16 w-auto rounded-lg object-cover"
+          />
+          <p class="pb-3 pt-6 text-center text-xl font-medium">
+            Consigue una tarjeta de regalo Amazon
+          </p>
+          <a
+            href="#"
+            class="block w-full rounded-b-2xl p-4 pt-0 text-center text-lg font-medium text-primary underline"
+            >Saber más</a
+          >
+        </div>
+        <div
+          class="w-full rounded-2xl border border-gray-200 bg-white p-10 md:w-[48%] xl:w-[32%]"
+        >
+          <img
+            src="https://cdn.lightsplaza.com/encuestas-assets/earnings-3.webp"
+            alt="Placeholder Image"
+            class="mx-auto h-16 w-auto rounded-lg object-cover"
+          />
+          <p class="pb-3 pt-6 text-center text-xl font-medium">
+            O simplemente retira el dinero
+          </p>
+          <a
+            href="#"
+            class="block w-full rounded-b-2xl p-4 pt-0 text-center text-lg font-medium text-primary underline"
+            >Saber más</a
+          >
+        </div>
+      </section>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="container mx-auto mb-8 max-w-6xl md:mb-10 xl:mb-14">
+      <div class="rounded-3xl bg-primary-light p-6 md:py-16">
+        <!-- Header -->
+        <div class="mb-12 text-center">
+          <h2 class="mb-4 text-2xl font-bold text-primary-dark md:text-3xl">
+            Preguntas más frecuentes (FAQ)
+          </h2>
+          <p class="text-sm text-txt-light md:text-base">
+            Consulta las preguntas más frecuentes
+          </p>
+        </div>
+
+        <!-- FAQ Items -->
+        <div class="mx-auto max-w-2xl space-y-4">
+          <!-- FAQ Item 1 -->
+          <div
+            class="rounded-2xl border border-gray-300 bg-white shadow-sm transition-colors duration-300 hover:border-primary/60 hover:bg-gray-50"
+          >
+            <button
+              class="faq-button flex w-full items-center justify-between p-4 text-left"
+              data-target="faq-1"
+            >
+              <span class="font-medium text-gray-800"
+                >¿Cómo puedo ganar dinero con encuestas remuneradas?</span
+              >
+              <svg
+                class="faq-icon h-6 w-6 flex-shrink-0 transform rounded-full border border-black text-gray-500 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="faq-1"
+              class="faq-content hidden px-4 pb-4 text-sm md:text-base"
+            >
+              <div class="leading-relaxed text-gray-600">
+                <p class="mb-4">
+                  xyberno.com es un sitio web gratuito donde puedes ganar dinero
+                  real por realizar encuestas remuneradas. Sólo tienes que
+                  registrarte con tu correo electrónico y empezar a ganar hoy
+                  mismo. Justo después de registrarte, puedes empezar a ganar
+                  dinero. El usuario medio retira su primera recompensa ¡el
+                  mismo día!
+                </p>
+                <p>
+                  Puedes hacer encuestas en cualquier lugar desde tu teléfono u
+                  ordenador.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 2 -->
+          <div
+            class="rounded-2xl border border-gray-300 bg-white shadow-sm transition-colors duration-300 hover:border-primary/60 hover:bg-gray-50"
+          >
+            <button
+              class="faq-button flex w-full items-center justify-between p-4 text-left"
+              data-target="faq-2"
+            >
+              <span class="font-medium text-gray-800"
+                >¿Cómo funciona la realización de encuestas?</span
+              >
+              <svg
+                class="faq-icon h-6 w-6 flex-shrink-0 transform rounded-full border border-black text-gray-500 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="faq-2"
+              class="faq-content hidden px-4 pb-4 text-sm md:text-base"
+            >
+              <div class="leading-relaxed text-gray-600">
+                <p class="mb-3">
+                  Primero, únete a nuestro panel registrándote. Es totalmente
+                  gratuito, y sólo necesitamos tu dirección de correo
+                  electrónico.
+                </p>
+                <p class="mb-3">
+                  Una vez que te conectes, podrás ver una lista de encuestas
+                  disponibles para ti. Tú decides qué encuestas aceptas. Puedes
+                  ver cuánto dura una encuesta y cuánto puedes ganar
+                  completándola.
+                </p>
+                <p>
+                  Al hacer clic en una encuesta, es posible que te hagamos un
+                  par de preguntas de calificación por nuestra parte. Esto es
+                  para asegurarnos de que estás entre el público objetivo de
+                  esta encuesta en particular. Después de este paso, serás
+                  redirigido a la encuesta. Una vez que la completes, serás
+                  redirigido de nuevo a nuestro panel y recibirás tus puntos,
+                  que podrás canjear inmediatamente por dinero o tarjetas de
+                  regalo.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 3 -->
+          <div
+            class="rounded-2xl border border-gray-300 bg-white shadow-sm transition-colors duration-300 hover:border-primary/60 hover:bg-gray-50"
+          >
+            <button
+              class="faq-button flex w-full items-center justify-between p-4 text-left"
+              data-target="faq-3"
+            >
+              <span class="font-medium text-gray-800"
+                >¿Tengo que darte mis datos personales?</span
+              >
+              <svg
+                class="faq-icon h-6 w-6 flex-shrink-0 transform rounded-full border border-black text-gray-500 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="faq-3"
+              class="faq-content hidden px-4 pb-4 text-sm md:text-base"
+            >
+              <div class="leading-relaxed text-gray-600">
+                <p class="mb-3">
+                  ¡No! Nunca venderemos tu correo electrónico ni lo
+                  compartiremos con ningún cliente de encuestas. Sólo
+                  necesitamos tu dirección de correo electrónico para crear tu
+                  cuenta.
+                </p>
+                <p>
+                  En las encuestas no se te pedirá información de identificación
+                  personal como tu nombre o dirección. Todas tus respuestas son
+                  completamente anónimas.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 4 -->
+          <div
+            class="rounded-2xl border border-gray-300 bg-white shadow-sm transition-colors duration-300 hover:border-primary/60 hover:bg-gray-50"
+          >
+            <button
+              class="faq-button flex w-full items-center justify-between p-4 text-left"
+              data-target="faq-4"
+            >
+              <span class="font-medium text-gray-800"
+                >¿Cuánto dinero puedo ganar?</span
+              >
+              <svg
+                class="faq-icon h-6 w-6 flex-shrink-0 transform rounded-full border border-black text-gray-500 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="faq-4"
+              class="faq-content hidden px-4 pb-4 text-sm md:text-base"
+            >
+              <div class="leading-relaxed text-gray-600">
+                <p>
+                  xyberno.com no es un trabajo a tiempo completo, pero con solo
+                  30-60 minutos al día, puedes ganar suficiente dinero para
+                  permitirte las cosas bonitas que te gustan. Desplázate hacia
+                  arriba para ver nuestras estadísticas en directo sobre cuánto
+                  ganaron ayer otros usuarios.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 5 -->
+          <div
+            class="rounded-2xl border border-gray-300 bg-white shadow-sm transition-colors duration-300 hover:border-primary/60 hover:bg-gray-50"
+          >
+            <button
+              class="faq-button flex w-full items-center justify-between p-4 text-left"
+              data-target="faq-5"
+            >
+              <span class="font-medium text-gray-800"
+                >¿Paga mejor xyberno.com que otros sitios web?</span
+              >
+              <svg
+                class="faq-icon h-6 w-6 flex-shrink-0 transform rounded-full border border-black text-gray-500 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="faq-5"
+              class="faq-content hidden px-4 pb-4 text-sm md:text-base"
+            >
+              <div class="leading-relaxed text-gray-600">
+                <p class="mb-3">
+                  ¡Sí! De media, xyberno.com paga un 150 % más por las mismas
+                  encuestas.
+                </p>
+                <p>
+                  ¿Por qué podemos hacerlo? Porque no pagamos grandes cantidades
+                  por marketing, ¡sino que retribuimos a nuestros usuarios!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 6 -->
+          <div
+            class="rounded-2xl border border-gray-300 bg-white shadow-sm transition-colors duration-300 hover:border-primary/60 hover:bg-gray-50"
+          >
+            <button
+              class="faq-button flex w-full items-center justify-between p-4 text-left"
+              data-target="faq-6"
+            >
+              <span class="font-medium text-gray-800"
+                >¿Realmente puedo retirar dinero en efectivo?</span
+              >
+              <svg
+                class="faq-icon h-6 w-6 flex-shrink-0 transform rounded-full border border-black text-gray-500 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="faq-6"
+              class="faq-content hidden px-4 pb-4 text-sm md:text-base"
+            >
+              <div class="leading-relaxed text-gray-600">
+                <p class="mb-3">
+                  ¡Sí! Puedes retirar dinero al instante a tu cuenta PayPal o
+                  bancaria. Las retiradas se procesan inmediatamente y se abonan
+                  en tu cuenta en pocas horas.
+                </p>
+                <p>
+                  Alternativamente, puedes elegir entre nuestras diversas
+                  tarjetas de regalo para pagar en tus tiendas o servicios
+                  favoritos, como Amazon, Shopify, Apple y muchos más.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 7 -->
+          <div
+            class="rounded-2xl border border-gray-300 bg-white shadow-sm transition-colors duration-300 hover:border-primary/60 hover:bg-gray-50"
+          >
+            <button
+              class="faq-button flex w-full items-center justify-between p-4 text-left"
+              data-target="faq-7"
+            >
+              <span class="font-medium text-gray-800"
+                >¿Hay un importe mínimo de retirada?</span
+              >
+              <svg
+                class="faq-icon h-6 w-6 flex-shrink-0 transform rounded-full border border-black text-gray-500 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="faq-7"
+              class="faq-content hidden px-4 pb-4 text-sm md:text-base"
+            >
+              <div class="leading-relaxed text-gray-600">
+                <p class="mb-3">En realidad, no. ¡Depende de ti!</p>
+                <p>
+                  Al registrarte, puedes elegir tu Bono de Bienvenida gratuito.
+                  Puedes elegir el Bono de Bienvenida normal y retirarlo después
+                  de unas cuantas encuestas. Si te decides por un Bono de
+                  Bienvenida mayor, tiene un pequeño importe mínimo de retirada.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 8 -->
+          <div
+            class="rounded-2xl border border-gray-300 bg-white shadow-sm transition-colors duration-300 hover:border-primary/60 hover:bg-gray-50"
+          >
+            <button
+              class="faq-button flex w-full items-center justify-between p-4 text-left"
+              data-target="faq-8"
+            >
+              <span class="font-medium text-gray-800"
+                >¿Qué es importante a la hora de hacer encuestas?</span
+              >
+              <svg
+                class="faq-icon h-6 w-6 flex-shrink-0 transform rounded-full border border-black text-gray-500 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="faq-8"
+              class="faq-content hidden px-4 pb-4 text-sm md:text-base"
+            >
+              <div class="leading-relaxed text-gray-600">
+                <p class="mb-3">
+                  Las opiniones que proporcionas en nuestras encuestas influyen
+                  directamente en los productos y servicios que ofrecen las
+                  grandes marcas internacionales. Por lo tanto, debes estar
+                  atento y ser sincero al responder a las encuestas.
+                </p>
+                <p>
+                  Las encuestas controlan la calidad de tus respuestas y te
+                  descartarán si consideran que puedes ser poco sincero.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- FAQ Item 9 -->
+          <div
+            class="rounded-2xl border border-gray-300 bg-white shadow-sm transition-colors duration-300 hover:border-primary/60 hover:bg-gray-50"
+          >
+            <button
+              class="faq-button flex w-full items-center justify-between p-4 text-left"
+              data-target="faq-9"
+            >
+              <span class="font-medium text-gray-800"
+                >Estos son algunos consejos para completar encuestas con
+                éxito</span
+              >
+              <svg
+                class="faq-icon h-6 w-6 flex-shrink-0 transform rounded-full border border-black text-gray-500 transition-transform duration-300"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                ></path>
+              </svg>
+            </button>
+            <div
+              id="faq-9"
+              class="faq-content hidden px-4 pb-4 text-sm md:text-base"
+            >
+              <div class="leading-relaxed text-gray-600">
+                <p class="mb-3">
+                  • No te precipites. Tómate tu tiempo para leer las preguntas.
+                </p>
+                <p class="mb-3">
+                  • Sé sincero. Da respuestas precisas sobre ti y tu opinión.
+                </p>
+                <p class="mb-3">
+                  • No utilices una VPN ni una wifi pública. Cualquier servicio
+                  que ofusque tu conexión se considera un fraude.
+                </p>
+                <p class="mb-3">
+                  • Sé abierto. Responder a las preguntas con un "No quiero
+                  responder a esta pregunta" normalmente te descartará.
+                </p>
+                <p>
+                  • Sé detallado. Cuando te hagan preguntas de texto libre,
+                  proporciona una respuesta única y detallada. El lenguaje
+                  ofensivo, las respuestas copiadas o de poco esfuerzo harán que
+                  te descarten.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer
+      class="container mx-auto grid max-w-6xl border-t border-zinc-200 py-14 text-sm md:grid-cols-2 md:pb-16 lg:pb-20 xl:pb-24"
+    >
+      <div class="mb-6 flex flex-col items-center gap-4 text-center text-black">
+        <div
+          class="flex w-fit flex-col items-center gap-4 text-center lg:items-start"
+        >
+          <a
+            href="#hero"
+            class="transition-transform duration-300 hover:scale-105"
+          >
+            <img
+              src="https://cdn.lightsplaza.com/encuestas-assets/logo.webp"
+              alt="Placeholder Image"
+              class="mr-4 inline-block h-20 w-auto"
+            />
+          </a>
+          <p class="lg:text-start">
+            © 2025 xyberno.com
+            <br />
+            Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+
+      <div class="flex flex-col items-center justify-center gap-2 text-center">
+        <h4 class="font-semibold uppercase">Información legal</h4>
+        <ul
+          class="flex flex-col items-center gap-2 font-medium text-txt-light lg:items-start"
+        >
+          <li>
+            <a href="policy.html" class="hover:underline active:text-primary"
+              >Política de privacidad</a
+            >
+          </li>
+          <li>
+            <a href="terms.html" class="hover:underline active:text-primary"
+              >Términos y condiciones</a
+            >
+          </li>
+          <li>
+            <a
+              href="personal-information.html"
+              class="hover:underline active:text-primary"
+              >No vendas mis datos</a
+            >
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <!-- FAQ script -->
+    <script>
+      // FAQ Functionality
+      document.addEventListener("DOMContentLoaded", function () {
+        const faqButtons = document.querySelectorAll(".faq-button");
+
+        faqButtons.forEach((button) => {
+          button.addEventListener("click", function () {
+            const targetId = this.getAttribute("data-target");
+            const content = document.getElementById(targetId);
+            const icon = this.querySelector(".faq-icon");
+
+            // Close all other FAQ items
+            faqButtons.forEach((otherButton) => {
+              if (otherButton !== this) {
+                const otherTargetId = otherButton.getAttribute("data-target");
+                const otherContent = document.getElementById(otherTargetId);
+                const otherIcon = otherButton.querySelector(".faq-icon");
+
+                otherContent.classList.add("hidden");
+                otherIcon.style.transform = "rotate(0deg)";
+              }
+            });
+
+            // Toggle current FAQ item
+            if (content.classList.contains("hidden")) {
+              content.classList.remove("hidden");
+              icon.style.transform = "rotate(180deg)";
+            } else {
+              content.classList.add("hidden");
+              icon.style.transform = "rotate(0deg)";
+            }
+          });
+        });
+      });
+    </script>
+
+    <script
+      src="https://cdn.lightsplaza.com/encuesta-src/carousel-navbar.js"
+      defer=""
+    ></script>
+    <script
+      src="https://cdn.lightsplaza.com/encuesta-src/form.js"
+      defer=""
+    ></script>
+    <script
+      src="https://cdn.lightsplaza.com/encuesta-src/navbar.js"
+      defer=""
+    ></script>
+    <script
+      src="https://cdn.lightsplaza.com/encuesta-src/swipers-recompensas.js"
+      defer=""
+    ></script>
+
+    <script>
+      function initializeTabs() {
+        const mainSection = document.querySelector(
+          "section.flex.h-max.flex-col.gap-4.overflow-x-hidden.lg\\:flex-row"
+        );
+        if (!mainSection) {
+          console.error("No se encontró la sección principal");
+          return;
+        }
+
+        const tabsContainer = mainSection.querySelector("article:first-child");
+        if (!tabsContainer) {
+          console.error("No se encontró el contenedor de tabs");
+          return;
+        }
+
+        const tabs = tabsContainer.querySelectorAll(
+          "div.flex.w-full.max-w-\\[350px\\]"
+        );
+
+        // Crear el loader si no existe
+        let loader = document.getElementById("carousel-loader");
+        if (!loader) {
+          const carouselsContainer = mainSection.querySelector(
+            "article.flex.w-full.items-center.lg\\:w-8\\/12"
+          );
+          if (carouselsContainer) {
+            carouselsContainer.classList.add("carousels-container");
+            carouselsContainer.style.position = "relative";
+
+            loader = document.createElement("div");
+            loader.className = "loader-container";
+            loader.id = "carousel-loader";
+            loader.innerHTML = '<div class="loader"></div>';
+            carouselsContainer.insertBefore(
+              loader,
+              carouselsContainer.firstChild
+            );
+          }
+        }
+
+        const carousels = {
+          efectivo: document.querySelector(".swiper-efectivo"),
+          tarjeta: document.querySelector(".swiper-tarjeta"),
+          tarjetaCredito: document.querySelector(".swiper-tarjeta-credito"),
+          donaciones: document.querySelector(".swiper-donaciones"),
+        };
+
+        let isTransitioning = false;
+
+        function showLoader() {
+          if (loader) {
+            loader.style.display = "flex";
+          }
+        }
+
+        function hideLoader() {
+          if (loader) {
+            loader.style.display = "none";
+          }
+        }
+
+        function hideAllCarousels() {
+          Object.values(carousels).forEach((carousel) => {
+            if (carousel) {
+              carousel.style.display = "none";
+              carousel.classList.remove("carousel-fade-in");
+            }
+          });
+        }
+
+        function removeActiveStyles() {
+          tabs.forEach((tab) => {
+            tab.classList.remove("bg-primary-light");
+            tab.classList.add("border-[1px]", "border-[#EEEEEE]", "bg-white");
+          });
+        }
+
+        function activateTab(tabElement, carouselKey) {
+          if (isTransitioning) return;
+          if (tabElement.classList.contains("bg-primary-light")) return;
+
+          isTransitioning = true;
+          showLoader();
+          hideAllCarousels();
+
+          setTimeout(() => {
+            removeActiveStyles();
+            tabElement.classList.remove(
+              "border-[1px]",
+              "border-[#EEEEEE]",
+              "bg-white"
+            );
+            tabElement.classList.add("bg-primary-light");
+
+            if (carousels[carouselKey]) {
+              carousels[carouselKey].style.display = "flex";
+              carousels[carouselKey].classList.add("carousel-fade-in");
+            }
+
+            setTimeout(() => {
+              hideLoader();
+              isTransitioning = false;
+            }, 300);
+          }, 500);
+        }
+
+        // IMPORTANTE: Ocultar todos los carruseles al inicio
+        hideAllCarousels();
+
+        if (tabs.length >= 4) {
+          tabs[0].addEventListener("click", () =>
+            activateTab(tabs[0], "efectivo")
+          );
+          tabs[1].addEventListener("click", () =>
+            activateTab(tabs[1], "tarjeta")
+          );
+          tabs[2].addEventListener("click", () =>
+            activateTab(tabs[2], "tarjetaCredito")
+          );
+          tabs[3].addEventListener("click", () =>
+            activateTab(tabs[3], "donaciones")
+          );
+
+          // Activar la primera tab sin animación ni loader
+          removeActiveStyles();
+          tabs[0].classList.remove(
+            "border-[1px]",
+            "border-[#EEEEEE]",
+            "bg-white"
+          );
+          tabs[0].classList.add("bg-primary-light");
+          if (carousels.efectivo) {
+            carousels.efectivo.style.display = "flex";
+          }
+        }
+      }
+
+      if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", initializeTabs);
+      } else {
+        initializeTabs();
+      }
+    </script>
+  </body>
+</html>

@@ -13,6 +13,7 @@ import { routing } from "@/i18n/routing";
 import LanguageDetector from "@/components/LanguageDetector";
 import DebugLanguageDetector from "@/components/DebugLanguageDetector";
 import ChangeLanguage from "@/components/ChangeLanguage";
+import "@/app/globals.css";
 
 type Props = {
   children: ReactNode;
@@ -62,14 +63,13 @@ export default async function LocaleLayout({ params, children }: Props) {
           }}
         >
           <NextIntlClientProvider>
-            {children}
-
             {/* Componente para cambiar el idioma */}
             <ChangeLanguage />
+            {children}
 
             {/* Detector de idioma - Solo se ejecuta en el cliente */}
             <LanguageDetector />
-            <DebugLanguageDetector />
+            {/* <DebugLanguageDetector /> */}
           </NextIntlClientProvider>
         </div>
       </body>
