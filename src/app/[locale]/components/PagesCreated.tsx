@@ -1,11 +1,9 @@
-// src/app/[locale]/components/PagesCreated.tsx
-"use client"; // This must be a client component to use state and event handlers
+"use client";
 
 import Image from "next/image";
 import { useState } from "react";
 import { Dices } from "lucide-react";
 
-// (Paste the type and projects array from Step 1 here)
 type Project = {
   name: string;
   imagePreview: string;
@@ -19,32 +17,30 @@ const projects: Project[] = [
     name: "MX Encuestas",
     imagePreview: "/landings/mxencuestas/image.png",
     htmlSrc: "/landings/mxencuestas/index.html",
-    technologies: ["next", "tailwind", "typescript", "html", "css"],
+    technologies: ["html", "tailwind", "css", "js", "cloudflare"],
     description: "",
   },
   {
     name: "ATourGuidesJournel",
     imagePreview: "/landings/atourguidesjournel/image.png",
     htmlSrc: "/landings/atourguidesjournel/index.html",
-    technologies: ["next", "tailwind", "typescript", "html", "css"],
+    technologies: ["html", "tailwind", "css", "js", "cloudflare"],
     description: "",
   },
   {
     name: "xCrossMotor",
     imagePreview: "/landings/xcrossmotor/image.png",
     htmlSrc: "/landings/xcrossmotor/index.html",
-    technologies: ["next", "tailwind", "typescript", "html", "css"],
+    technologies: ["html", "tailwind", "css", "js", "cloudflare"],
     description: "",
   },
 ];
 
 export default function PagesCreated() {
-  // State to hold the src of the selected project. null = modal is closed.
   const [selectedProjectSrc, setSelectedProjectSrc] = useState<string | null>(
     null
   );
 
-  // Type-safe handler to open the modal
   const openModal = (project: Project) => {
     setSelectedProjectSrc(project.htmlSrc);
   };
@@ -87,29 +83,57 @@ export default function PagesCreated() {
               </h3>
               {/* <p className="text-neutral-400 mt-2">{project.description}</p> */}
 
-              <div className="mt-3">
-                {project.technologies.map((technology) => (
-                  <div
-                    key={technology}
-                    className="bg-neutral-700 text-white px-2 py-1 rounded-full text-xs"
-                  >
-                    {technology}
-                  </div>
-                ))}
+              <div className="mt-3 lg:mt-4 flex gap-2 w-full flex-wrap items-baseline">
+                {project.technologies.map((technology) => {
+                  let icon = "";
+                  switch (technology) {
+                    case "next":
+                      icon = "/tech-icons/next.png";
+                      break;
+                    case "tailwind":
+                      icon = "/tech-icons/tailwind.svg";
+                      break;
+                    case "typescript":
+                      icon = "/tech-icons/typescript.svg";
+                      break;
+                    case "html":
+                      icon = "/tech-icons/html.svg";
+                      break;
+                    case "css":
+                      icon = "/tech-icons/css.svg";
+                      break;
+                    case "js":
+                      icon = "/tech-icons/js.svg";
+                      break;
+                    case "cloudflare":
+                      icon = "/tech-icons/cloudflare.svg";
+                      break;
+                    default:
+                      icon = "/tech-icons/cloudflare.svg";
+                      break;
+                  }
+                  return (
+                    <Image
+                      src={icon}
+                      alt={technology}
+                      key={technology}
+                      className="h-4 md:h-5 lg:h-6 w-auto max-w-11 md:max-w-12 lg:max-w-16 object-contain"
+                      width={64}
+                      height={24}
+                    />
+                  );
+                })}
               </div>
             </div>
           </div>
         ))}
       </div>
 
-      {/* Modal - rendered conditionally */}
       {selectedProjectSrc && (
-        // Modal Backdrop: fixed position, covers screen, semi-transparent bg, centers content
         <div
           className="fixed inset-0 bg-black/80 sh-container flex justify-center items-center z-50"
           onClick={closeModal}
         >
-          {/* Modal Content: stops click propagation, responsive width/height */}
           <div
             className="relative w-11/12 h-5/6 bg-neutral-900 rounded-lg shadow-2xl flex flex-col p-4"
             onClick={(e) => e.stopPropagation()}
