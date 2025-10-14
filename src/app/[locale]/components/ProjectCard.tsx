@@ -1,11 +1,11 @@
 import Image from "next/image";
-import type { Project } from "./PagesCreated"; // Import the type from the parent
+import type { Landing } from "@prisma/client"; // Import the type from the parent
 
 const TECHNOLOGY_ICONS: { [key: string]: string } = {
   html: "/tech-icons/html.svg",
   tailwind: "/tech-icons/tailwind.svg",
   css: "/tech-icons/css.svg",
-  "javscript-ES6": "/tech-icons/js.svg",
+  "javascript-ES6": "/tech-icons/js.svg",
   cloudflare: "/tech-icons/cloudflare.svg",
   next: "/tech-icons/next.png",
   typescript: "/tech-icons/typescript.svg",
@@ -13,7 +13,7 @@ const TECHNOLOGY_ICONS: { [key: string]: string } = {
 };
 
 type ProjectCardProps = {
-  project: Project;
+  project: Landing;
   onClick: () => void;
 };
 
@@ -43,7 +43,7 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
               src={TECHNOLOGY_ICONS[techName] || TECHNOLOGY_ICONS.default}
               alt={techName}
               title={techName}
-              className="h-4 md:h-5 lg:h-6 opacity-80 hover:opacity-100 w-auto object-contain"
+              className="h-4 md:h-5 lg:h-6 opacity-90 hover:opacity-100 w-auto object-contain"
               width={64}
               height={24}
             />

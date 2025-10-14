@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "^6.17.1",
+    "@prisma/extension-accelerate": "^2.0.2",
+    "@vercel/speed-insights": "^1.2.0",
     "country-flag-icons": "^1.5.19",
     "lucide-react": "^0.545.0",
     "next": "15.5.4",
@@ -27,6 +30,7 @@
     "prisma": "^6.17.1",
     "tailwindcss": "^4",
     "ts-node": "^10.9.2",
-    "typescript": "^5"
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3"
   }
 }
