@@ -3,8 +3,8 @@
 import { useState, useEffect } from "react";
 import { Dices, LoaderCircle } from "lucide-react";
 import { Landing } from "@prisma/client";
-import { ProjectCard } from "./ProjectCard";
-import { ProjectModal } from "./ProjectModal";
+import { ProjectCard } from "../components/ProjectCard";
+import { ProjectModal } from "../components/ProjectModal";
 
 export default function PagesCreated() {
   // Estado para guardar los landings que se están mostrando

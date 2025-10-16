@@ -1,12 +1,15 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #000501;
+  --background: #000501;
+  --foreground: #f1f7f3;
 }
 
 @theme {
   --color-shBlack: #000501;
+  --color-txt-100: #f1f7f3;
+  --color-txt-200: #e3eee6;
+  --color-txt-300: #d5e6da;
   --color-primary-400: #99d19c;
   --color-primary-500: #73ab84;
   --color-secondary: #afb3f7;
@@ -41,13 +44,6 @@ html[lang] {
 
   h3 {
     @apply text-xl md:text-2xl xl:text-3xl;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #000501;
-    --foreground: #ededed;
   }
 }
 
