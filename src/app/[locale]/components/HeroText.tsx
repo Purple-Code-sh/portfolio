@@ -4,7 +4,7 @@ import { article } from "motion/react-client";
 
 export default function HeroText() {
   return (
-    <article className="mt-10 md:mt-12 lg:mt-16">
+    <article className="mt-10 md:mt-12 lg:mt-16 h-[90dvh] sh-container z-20 bg-transparent">
       <motion.p
         className="text-center md:text-left text-base md:text-lg mb-4 text-balance text-primary-400 md:border-l-4 border-primary-500/30 pl-2"
         initial={{ opacity: 0, x: -50 }}

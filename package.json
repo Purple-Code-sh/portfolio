@@ -11,6 +11,9 @@
   "dependencies": {
     "@prisma/client": "^6.17.1",
     "@prisma/extension-accelerate": "^2.0.2",
+    "@react-three/drei": "^10.7.6",
+    "@react-three/fiber": "^9.4.0",
+    "@types/three": "^0.180.0",
     "@vercel/speed-insights": "^1.2.0",
     "country-flag-icons": "^1.5.19",
     "lucide-react": "^0.545.0",
@@ -18,7 +21,8 @@
     "next": "15.5.4",
     "next-intl": "^4.1.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "three": "^0.180.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
