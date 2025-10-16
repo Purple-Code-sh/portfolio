@@ -50,7 +50,7 @@ export default function PagesCreated() {
         <button
           onClick={fetchRandomLandings}
           disabled={isLoading}
-          className="bg-white hover:bg-primary-500 transition-colors duration-300 hover:text-white cursor-pointer w-fit flex shrink-0 gap-2 items-center text-black font-bold py-2 px-4 rounded-full text-sm md:text-base disabled:bg-neutral-400 disabled:cursor-not-allowed"
+          className="bg-gradient-to-t from-primary-500 to-gray-100 hover:from-primary-400 hover:to-white transition-colors duration-300 hover:scale-[102%] cursor-pointer w-fit flex shrink-0 gap-2 items-center text-black font-bold py-2 px-4 rounded-full text-sm md:text-base disabled:bg-neutral-400 disabled:cursor-not-allowed"
         >
           {isLoading ? "Cargando..." : "Mostrar otros"}
           <Dices className="h-5 w-auto font-bold transition-transform" />

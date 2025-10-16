@@ -2,14 +2,14 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #000501;
 }
 
 @theme {
-  --color-primary-100: #e3d0e6;
-  --color-primary-500: #9554a0;
-  --color-primary-600: #774380;
-  --color-secondary: #9779cd;
+  --color-shBlack: #000501;
+  --color-primary-400: #99d19c;
+  --color-primary-500: #73ab84;
+  --color-secondary: #afb3f7;
 
   --font-didact: "Didact Gothic", sans-serif;
   --font-zen: "Zen Dots", sans-serif;
@@ -46,7 +46,7 @@ html[lang] {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000501;
     --foreground: #ededed;
   }
 }

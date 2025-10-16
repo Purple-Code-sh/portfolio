@@ -20,7 +20,7 @@ type ProjectCardProps = {
 export function ProjectCard({ project, onClick }: ProjectCardProps) {
   return (
     <div
-      className="bg-neutral-800 border-primary-600/25 border rounded-lg overflow-hidden cursor-pointer transition-transform duration-300 hover:translate-y-[-5px] hover:shadow-xl h-full flex flex-col"
+      className="bg-neutral-800 border-secondary/20 hover:border-primary-400/50 shadow-primary-400/15 border rounded-lg overflow-hidden cursor-pointer transition-all duration-300 hover:translate-y-[-5px] hover:shadow-xl h-full flex flex-col"
       onClick={onClick}
       role="button"
       tabIndex={0}
