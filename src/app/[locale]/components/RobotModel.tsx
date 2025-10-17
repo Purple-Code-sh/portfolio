@@ -43,7 +43,7 @@ export function Model(props: JSX.IntrinsicElements["group"]) {
   }, [actions, animations]);
 
   return (
-    <group ref={group} {...props} dispose={null}>
+    <group ref={group} {...props} dispose={null} scale={5}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <mesh
           geometry={nodes.Object_2.geometry}
