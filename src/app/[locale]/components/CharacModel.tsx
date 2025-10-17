@@ -1,9 +1,9 @@
 "use client";
 
 import * as THREE from "three";
-import React, { useEffect, useRef, type JSX } from "react";
-import { Canvas } from "@react-three/fiber";
-import { useGLTF, useAnimations, OrbitControls } from "@react-three/drei";
+import React, { useEffect, useLayoutEffect, useRef, type JSX } from "react";
+import { Canvas, useThree } from "@react-three/fiber";
+import { useGLTF, useAnimations } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
 
 type GLTFResult = GLTF & {
@@ -51,6 +51,15 @@ function CharacModel(props: JSX.IntrinsicElements["group"]) {
 
 useGLTF.preload("/charac.glb");
 
+function CameraSetup() {
+  const { camera } = useThree();
+  useLayoutEffect(() => {
+    camera.lookAt(0, -40, 0); // Apunta la cámara al punto deseado
+    camera.updateProjectionMatrix(); // Actualiza la cámara con la nueva rotación
+  }, [camera]);
+  return null;
+}
+
 // --- Componente de la Escena Principal (Versión Final) ---
 
 export default function YourSceneComponent() {
@@ -59,18 +68,14 @@ export default function YourSceneComponent() {
       className="absolute inset-0 mx-auto z-30"
       style={{ width: "90vw", height: "90dvh" }}
     >
-      <Canvas
-        // Se establecen los valores finales de la cámara
-        camera={{ position: [-33, -40, 42], near: 0.1, far: 1000 }}
-      >
-        <ambientLight intensity={1.5} color={"#d5e6da"} />
+      <Canvas camera={{ position: [-33, -40, 42], near: 0.1, far: 1000 }}>
+        <ambientLight intensity={1.5} />
         <directionalLight position={[5, 5, 5]} intensity={1} />
 
-        {/* Se establece la posición final del modelo */}
         <CharacModel position={[10, -70, 40]} />
 
-        {/* Se establece el objetivo final y se eliminan los logs */}
-        <OrbitControls target={[0, -40, 0]} enabled={false} />
+        {/* Se elimina OrbitControls y se usa el componente auxiliar */}
+        <CameraSetup />
       </Canvas>
     </figure>
   );
