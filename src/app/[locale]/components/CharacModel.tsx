@@ -70,7 +70,7 @@ export default function YourSceneComponent() {
         <CharacModel position={[10, -70, 40]} />
 
         {/* Se establece el objetivo final y se eliminan los logs */}
-        <OrbitControls target={[0, -40, 0]} />
+        <OrbitControls target={[0, -40, 0]} enabled={false} />
       </Canvas>
     </figure>
   );
