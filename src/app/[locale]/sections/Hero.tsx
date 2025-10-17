@@ -3,7 +3,8 @@ import { motion } from "motion/react";
 import { Canvas } from "@react-three/fiber";
 import HeroText from "../components/HeroText";
 import ParallaxBg from "../components/ParallaxBg";
-import { Model } from "../components/Figure";
+import { CharacModel } from "../components/CharacModel";
+import { OrbitControls } from "@react-three/drei";
 
 export default function Hero() {
   return (
@@ -11,11 +12,12 @@ export default function Hero() {
       <HeroText />
       <ParallaxBg />
       <figure
-        className="absolute inset-0 mx-auto z-30 border border-red-400"
+        className="absolute inset-0 mx-auto z-30 border border-red-800"
         style={{ width: "90vw", height: "90dvh" }}
       >
         <Canvas>
-          <Model />
+          <CharacModel />
+          <OrbitControls />
         </Canvas>
       </figure>
     </section>
