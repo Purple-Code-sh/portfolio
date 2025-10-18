@@ -36,6 +36,11 @@ export async function generateMetadata(
     metadataBase: new URL("http://localhost:3000"),
     title: t("title"),
     description: t("description"),
+    robots: {
+      index: true,
+      follow: true,
+      notranslate: true,
+    },
     other: {
       currentYear: formatter.dateTime(now, { year: "numeric" }),
       timeZone,
@@ -51,9 +56,11 @@ export default async function LocaleLayout({ params, children }: Props) {
     notFound();
   }
 
+  console.log("LocaleSpecific: ", locale);
+
   return (
-    <html className={inter.className} lang={locale}>
-      <body className="py-4">
+    <html className={inter.className} lang={locale} translate="no">
+      <body>
         <NextIntlClientProvider>
           {/* Componente para cambiar el idioma */}
           <ChangeLanguage />
