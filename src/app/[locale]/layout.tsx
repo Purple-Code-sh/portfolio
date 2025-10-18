@@ -54,7 +54,7 @@ export default async function LocaleLayout({ params, children }: Props) {
 
   return (
     <html className={inter.className} lang={locale}>
-      <body className="p-4">
+      <body>
         <NextIntlClientProvider>
           {/* Componente para cambiar el idioma */}
           <ChangeLanguage />
