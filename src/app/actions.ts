@@ -46,12 +46,12 @@ export async function createLandingAction(formData: FormData) {
   redirect("/");
 }
 
-const parseLinesToArray = (text: string | null): string[] => {
+const parseCommasToArray = (text: string | null): string[] => {
   if (!text) return [];
   return text
-    .split("\n") // Divide el string por cada salto de línea
+    .split(",") // Divide el string por cada coma
     .map((s) => s.trim()) // Quita espacios en blanco al inicio y final
-    .filter(Boolean); // Elimina líneas vacías
+    .filter(Boolean); // Elimina campos vacíos (ej. "react,,next")
 };
 
 export async function createProjectAction(formData: FormData) {
@@ -63,11 +63,11 @@ export async function createProjectAction(formData: FormData) {
   const site_url = formData.get("site_url") as string | null;
 
   // 2. Extraer y procesar los campos de array
-  const responsibilities = parseLinesToArray(
+  const responsibilities = parseCommasToArray(
     formData.get("responsibilities") as string
   );
-  const teams = parseLinesToArray(formData.get("teams") as string);
-  const technologies = parseLinesToArray(
+  const teams = parseCommasToArray(formData.get("teams") as string);
+  const technologies = parseCommasToArray(
     formData.get("technologies") as string
   );
 

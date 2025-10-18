@@ -100,15 +100,15 @@ export default function AddProjectPage() {
             htmlFor="responsibilities"
             className="block mb-2 text-sm font-medium text-neutral-300"
           >
-            Responsabilidades (una por línea)
+            Responsabilidades (separadas por coma)
           </label>
-          <textarea
+          <input
+            type="text"
             id="responsibilities"
             name="responsibilities"
             required
-            rows={5}
             className="bg-neutral-700 border border-neutral-600 text-white text-sm rounded-lg w-full p-2.5"
-          ></textarea>
+          />
         </div>
 
         <div className="mb-4">
@@ -116,15 +116,15 @@ export default function AddProjectPage() {
             htmlFor="teams"
             className="block mb-2 text-sm font-medium text-neutral-300"
           >
-            Equipos (uno por línea)
+            Equipos (separados por coma)
           </label>
-          <textarea
+          <input
+            type="text"
             id="teams"
             name="teams"
             required
-            rows={5}
             className="bg-neutral-700 border border-neutral-600 text-white text-sm rounded-lg w-full p-2.5"
-          ></textarea>
+          />
         </div>
 
         <div className="mb-4">
@@ -132,15 +132,15 @@ export default function AddProjectPage() {
             htmlFor="technologies"
             className="block mb-2 text-sm font-medium text-neutral-300"
           >
-            Tecnologías (una por línea)
+            Tecnologías (separadas por coma)
           </label>
-          <textarea
+          <input
+            type="text"
             id="technologies"
             name="technologies"
             required
-            rows={5}
             className="bg-neutral-700 border border-neutral-600 text-white text-sm rounded-lg w-full p-2.5"
-          ></textarea>
+          />
         </div>
 
         <button
