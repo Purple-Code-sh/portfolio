@@ -8,8 +8,16 @@
     "en": "Inglés",
     "es": "Español"
   },
-  "HomePage": {
-    "title": "¡Hola, mundo!",
-    "about": "Ir a la página de información"
+  "Hero": {
+    "greeting": "Hola, soy Shmin.",
+    "role": "Ingeniero de Software",
+    "motto": "Escalando Equipos con Código.",
+    "passion": "Me apasiona crear soluciones con React, Next.js y Python que resuelven complejos desafíos empresariales mediante automatización y herramientas impulsadas por IA."
+  },
+  "Landings": {
+    "title": "Landing Pages Desarrolladas",
+    "count": "(+160)",
+    "button": "Explorar más",
+    "loading": "Cargando..."
   }
 }

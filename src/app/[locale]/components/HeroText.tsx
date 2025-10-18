@@ -1,8 +1,10 @@
 "use client";
 import { motion } from "motion/react";
 import { article } from "motion/react-client";
+import { useTranslations } from "next-intl";
 
 export default function HeroText() {
+  const t = useTranslations("Hero");
   return (
     <article className="mt-4 md:mt-12 lg:mt-16 h-[90dvh] sh-container z-30 bg-transparent">
       <motion.p
@@ -11,7 +13,7 @@ export default function HeroText() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1 }}
       >
-        Hi, I&apos;m Shmin.
+        {t("greeting")}
       </motion.p>
       <motion.h1
         className="text-center md:text-left bg-clip-text text-transparent bg-gradient-to-t md:bg-gradient-to-tl from-secondary via-white to-primary-500 pb-4 text-5xl md:text-6xl font-bold"
@@ -19,7 +21,7 @@ export default function HeroText() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.3, duration: 0.5 }}
       >
-        Software Engineer
+        {t("role")}
       </motion.h1>
       <motion.p
         className="text-center md:text-left  text-xl md:text-2xl font-medium mb-2 md:mb-6"
@@ -27,7 +29,7 @@ export default function HeroText() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.6, duration: 0.5 }}
       >
-        Scaling Teams with Code.
+        {t("motto")}
       </motion.p>
 
       <motion.p
@@ -36,9 +38,7 @@ export default function HeroText() {
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.5, duration: 1 }}
       >
-        I&apos;m passionate about building solutions with React, Next.js, and
-        Python that solve complex business challenges through automation and
-        AI-powered tools.
+        {t("passion")}
       </motion.p>
     </article>
   );

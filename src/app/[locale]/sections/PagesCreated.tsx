@@ -1,5 +1,6 @@
 "use client"; // <-- ¡MUY IMPORTANTE! Esto lo convierte en un Client Component
 
+import { useTranslations } from "next-intl";
 import { useState, useEffect } from "react";
 import { Dices, LoaderCircle } from "lucide-react";
 import { Landing } from "@prisma/client";
@@ -7,6 +8,7 @@ import { ProjectCard } from "../components/ProjectCard";
 import { ProjectModal } from "../components/ProjectModal";
 
 export default function PagesCreated() {
+  const t = useTranslations("Landings");
   // Estado para guardar los landings que se están mostrando
   const [landings, setLandings] = useState<Landing[]>([]);
   // Estado para el modal (funciona igual que antes)
@@ -43,8 +45,8 @@ export default function PagesCreated() {
     <section className="w-full pb-8 md:pb-12 xl:pb-16">
       <div className="mb-6 lg:mb-8 flex gap-3 justify-between flex-wrap items-center">
         <h2>
-          Websites I have created{" "}
-          <span className="md:text-base text-sm">(+160)</span>
+          {t("title")}{" "}
+          <span className="md:text-base text-sm">{t("count")}</span>
         </h2>
         {/* El botón ahora llama a la función fetchRandomLandings */}
         <button
@@ -52,7 +54,7 @@ export default function PagesCreated() {
           disabled={isLoading}
           className="bg-gradient-to-t from-primary-500 to-gray-100 hover:from-primary-400 hover:to-white transition-colors duration-300 hover:scale-[102%] cursor-pointer w-fit flex shrink-0 gap-2 items-center text-black font-bold py-2 px-4 rounded-full text-sm md:text-base disabled:bg-neutral-400 disabled:cursor-not-allowed"
         >
-          {isLoading ? "Cargando..." : "Mostrar otros"}
+          {isLoading ? t("loading") : t("button")}
           <Dices className="h-5 w-auto font-bold transition-transform" />
         </button>
       </div>

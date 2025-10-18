@@ -80,7 +80,7 @@ export default function LanguageSelector() {
 
   return (
     <div
-      className="text-txt-300 relative flex justify-end sh-container"
+      className="text-txt-300 relative flex justify-end z-50 sh-container"
       title={t("title")}
     >
       {/* Botón principal */}
