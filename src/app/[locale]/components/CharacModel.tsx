@@ -33,7 +33,7 @@ function CharacModel(props: JSX.IntrinsicElements["group"]) {
       <group
         rotation={[-Math.PI / 2, 0, -0.5]}
         // Escala final ajustada
-        scale={0.8}
+        scale={0.78}
       >
         <group rotation={[Math.PI / 2, 0, 0]}>
           <mesh
@@ -68,11 +68,11 @@ export default function YourSceneComponent() {
       className="absolute inset-0 mx-auto z-30"
       style={{ width: "90vw", height: "90dvh" }}
     >
-      <Canvas camera={{ position: [-33, -40, 42], near: 0.1, far: 1000 }}>
+      <Canvas camera={{ position: [-33, -30, 42], near: 0.1, far: 1000 }}>
         <ambientLight intensity={1.5} />
         <directionalLight position={[5, 5, 5]} intensity={1} />
 
-        <CharacModel position={[10, -70, 40]} />
+        <CharacModel position={[8, -88, 24]} />
 
         {/* Se elimina OrbitControls y se usa el componente auxiliar */}
         <CameraSetup />
