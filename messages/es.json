@@ -19,5 +19,31 @@
     "count": "(+160)",
     "button": "Explorar más",
     "loading": "Cargando..."
+  },
+  "Projects": {
+    "title": "Proyectos Importantes en los que he colaborado",
+    "visit": "Visitar Sitio Web",
+    "resp": "Mis Responsabilidades",
+    "stack": "Tecnologías Utilizadas",
+    "teams": "Equipos Clave",
+
+    "Propexito": {
+      "title": "Propexito",
+      "desc": "Sitio web de cursos sobre operaciones financieras y plataforma de inversiones.",
+
+      "resp1": "Gestión y optimización de controladores de carga (loaders) de componentes.",
+      "resp2": "Actualización y mantenimiento del sistema de internacionalización (traducciones).",
+      "resp3": "Desarrollo e implementación de nuevas funcionalidades.",
+      "resp4": "Depuración y corrección de errores en el sistema de notificaciones.",
+      "resp5": "Maquetación (UI) y creación de nuevas secciones y componentes reutilizables.",
+
+      "team1": "Lideres de proyecto - Dubai",
+      "team2": "Equipo de Planeación - Chipre",
+      "team3": "Equipo de Desarrollo - Mexico",
+      "team4": "Equipo de Desarrollo - Israel",
+      "team5": "Equipo de Diseño - Israel",
+
+      "scope": "Internacional"
+    }
   }
 }

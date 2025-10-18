@@ -19,5 +19,30 @@
     "count": "(+160)",
     "button": "Explore more",
     "loading": "Loading..."
+  },
+  "Projects": {
+    "title": "Key Projects I've Collaborated On",
+    "visit": "Visit Website",
+    "resp": "My Responsibilities",
+    "stack": "Technologies Used",
+    "teams": "Key Teams",
+    "Propexito": {
+      "title": "Propexito",
+      "desc": "Website for courses on financial operations and investment platform.",
+
+      "resp1": "Management and optimization of component loaders.",
+      "resp2": "Update and maintenance of the internationalization (translation) system.",
+      "resp3": "Development and implementation of new features.",
+      "resp4": "Debugging and bug fixing in the notification system.",
+      "resp5": "UI layout and creation of new sections and reusable components.",
+
+      "team1": "Project Leaders - Dubai",
+      "team2": "Planning Team - Cyprus",
+      "team3": "Development Team - Mexico",
+      "team4": "Development Team - Israel",
+      "team5": "Design Team - Israel",
+
+      "scope": "International"
+    }
   }
 }

@@ -10,9 +10,7 @@ type ProjectGridProps = {
 };
 
 export function ProjectGrid({ projects }: ProjectGridProps) {
-  const [selectedProjectDesc, setSelectedProjectDesc] = useState<string | null>(
-    null
-  );
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
   return (
     <>
@@ -21,16 +19,16 @@ export function ProjectGrid({ projects }: ProjectGridProps) {
           <ProjectCard
             key={project.id}
             project={project}
-            onClick={() => setSelectedProjectDesc(project.description)}
+            onClick={() => setSelectedProject(project)}
           />
         ))}
       </div>
 
       {/* El modal funciona exactamente igual que antes */}
-      {selectedProjectDesc && (
+      {selectedProject && (
         <ProjectModal
-          src={selectedProjectDesc}
-          onClose={() => setSelectedProjectDesc(null)}
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
         />
       )}
     </>

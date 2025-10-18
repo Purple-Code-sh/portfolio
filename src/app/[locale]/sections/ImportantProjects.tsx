@@ -8,13 +8,12 @@ import { ProjectCard } from "../components/ProjectCard";
 import { ProjectModal } from "../components/ProjectModal";
 
 export default function ImportantProjects() {
-  const t = useTranslations("Landings");
+  const t = useTranslations("Projects");
   // Estado para guardar los landings que se están mostrando
   const [projects, setProjects] = useState<Project[]>([]);
   // Estado para el modal (funciona igual que antes)
-  const [selectedProjectSrc, setSelectedProjectSrc] = useState<string | null>(
-    null
-  );
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
   // Estado para mostrar un indicador de carga
   const [isLoading, setIsLoading] = useState(true);
 
@@ -44,10 +43,7 @@ export default function ImportantProjects() {
   return (
     <section className="w-full pb-8 md:pb-12 xl:pb-16">
       <div className="mb-6 lg:mb-8 flex gap-3 justify-between flex-wrap items-center">
-        <h2>
-          {t("title")}{" "}
-          <span className="md:text-base text-sm">{t("count")}</span>
-        </h2>
+        <h2>{t("title")}</h2>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 min-h-[300px]">
@@ -62,17 +58,17 @@ export default function ImportantProjects() {
             <ProjectCard
               key={project.id}
               project={project}
-              onClick={() => setSelectedProjectSrc(project.description)}
+              onClick={() => setSelectedProject(project)}
             />
           ))
         )}
       </div>
 
       {/* El modal no necesita cambios */}
-      {selectedProjectSrc && (
+      {selectedProject && (
         <ProjectModal
-          src={selectedProjectSrc}
-          onClose={() => setSelectedProjectSrc(null)}
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
         />
       )}
     </section>
