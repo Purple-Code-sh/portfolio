@@ -7,7 +7,7 @@ export default function Hero() {
     <section>
       <HeroText />
       <ParallaxBg />
-      {/* <DronComponent /> */}
+      <DronComponent />
     </section>
   );
 }
