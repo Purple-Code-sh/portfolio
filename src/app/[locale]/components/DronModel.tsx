@@ -561,7 +561,13 @@ export default function DronComponent() {
         <ambientLight intensity={1.5} color={"#d5e6da"} />
         <directionalLight position={[-10, 5, -80]} intensity={1} />
 
-        <DronModel position={[12, 2, 40]} />
+        <DronModel position={[7, -5, 36]} />
+
+        {/* After "lg" breakpoint */}
+        {/* <DronModel position={[14, 2, 38]} /> */}
+
+        {/* After "xl" breakpoint */}
+        {/* <DronModel position={[12, 2, 40]} /> */}
       </Canvas>
     </figure>
   );
