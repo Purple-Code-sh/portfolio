@@ -40,7 +40,7 @@ export default function PagesCreated() {
   }, []); // El array vacío asegura que solo se ejecute al inicio
 
   return (
-    <section className="w-full py-8 md:py-12 xl:py-16">
+    <section className="w-full pb-8 md:pb-12 xl:pb-16">
       <div className="mb-6 lg:mb-8 flex gap-3 justify-between flex-wrap items-center">
         <h2>
           Websites I have created{" "}

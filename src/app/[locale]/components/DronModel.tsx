@@ -1,7 +1,7 @@
 "use client";
 
 import * as THREE from "three";
-import React, { useEffect, useRef, type JSX } from "react";
+import React, { useState, useEffect, useRef, type JSX } from "react";
 import { Canvas } from "@react-three/fiber";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
@@ -551,23 +551,55 @@ function DronModel(props: JSX.IntrinsicElements["group"]) {
 
 useGLTF.preload("/drone.glb");
 
+// --- Componente de la Escena Principal con Lógica Responsiva ---
+
 export default function DronComponent() {
+  // 1. Se crea un estado para almacenar la posición del modelo, AHORA CON EL TIPO CORRECTO.
+  const [modelPosition, setModelPosition] = useState<[number, number, number]>([
+    7, -5, 36,
+  ]);
+
+  // 2. useEffect se encarga de la lógica que interactúa con el navegador.
+  useEffect(() => {
+    // Función que se ejecuta cada vez que la ventana cambia de tamaño.
+    const handleResize = () => {
+      // Breakpoint para pantallas grandes (lg: 1024px)
+      if (window.innerWidth >= 1280) {
+        // "xl" breakpoint
+        setModelPosition([13, 1, 42]);
+      } else if (window.innerWidth >= 1024) {
+        // "lg" breakpoint
+        setModelPosition([17, -2, 38]);
+      } else {
+        // Pantallas más pequeñas que "lg"
+        setModelPosition([7, -5, 36]);
+      }
+    };
+
+    // Se ejecuta la función una vez al cargar para establecer la posición inicial correcta.
+    handleResize();
+
+    // Se añade un "escucha" para el evento de cambio de tamaño de la ventana.
+    window.addEventListener("resize", handleResize);
+
+    // 3. Función de limpieza: Se elimina el "escucha" cuando el componente se desmonta.
+    // Esto es muy importante para el rendimiento y para evitar errores.
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []); // El array vacío asegura que este efecto se ejecute solo una vez (al montar y desmontar).
+
   return (
     <figure
-      className="absolute inset-0 mx-auto z-30"
+      className="absolute inset-0 mx-auto z-10 opacity-85"
       style={{ width: "90vw", height: "90dvh" }}
     >
       <Canvas camera={{ position: [10, 1, 50], near: 0.1, far: 1000 }}>
         <ambientLight intensity={1.5} color={"#d5e6da"} />
-        <directionalLight position={[-10, 5, -80]} intensity={1} />
+        <directionalLight position={[-20, -3, -90]} intensity={1} />
 
-        <DronModel position={[7, -5, 36]} />
-
-        {/* After "lg" breakpoint */}
-        {/* <DronModel position={[14, 2, 38]} /> */}
-
-        {/* After "xl" breakpoint */}
-        {/* <DronModel position={[12, 2, 40]} /> */}
+        {/* 4. La posición del modelo ahora es controlada por el estado 'modelPosition'. */}
+        <DronModel position={modelPosition} />
       </Canvas>
     </figure>
   );
