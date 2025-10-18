@@ -54,24 +54,16 @@ export default async function LocaleLayout({ params, children }: Props) {
 
   return (
     <html className={inter.className} lang={locale}>
-      <body>
-        <div
-          style={{
-            padding: 24,
-            fontFamily: "system-ui, sans-serif",
-            lineHeight: 1.5,
-          }}
-        >
-          <NextIntlClientProvider>
-            {/* Componente para cambiar el idioma */}
-            <ChangeLanguage />
-            {children}
+      <body className="p-4">
+        <NextIntlClientProvider>
+          {/* Componente para cambiar el idioma */}
+          <ChangeLanguage />
+          {children}
 
-            {/* Detector de idioma - Solo se ejecuta en el cliente */}
-            <LanguageDetector />
-            {/* <DebugLanguageDetector /> */}
-          </NextIntlClientProvider>
-        </div>
+          {/* Detector de idioma - Solo se ejecuta en el cliente */}
+          <LanguageDetector />
+          {/* <DebugLanguageDetector /> */}
+        </NextIntlClientProvider>
       </body>
     </html>
   );

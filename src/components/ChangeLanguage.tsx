@@ -138,7 +138,7 @@ export default function LanguageSelector() {
                 className="hover:bg-neutral-700 flex w-full cursor-pointer items-center space-x-2 px-4 py-2 text-white transition-colors duration-300"
                 title="Resetear y usar detección automática"
               >
-                <span className="text-xs">🌍 Auto-detectar</span>
+                <span className="text-xs">🌍 Auto</span>
               </button>
             </>
           )}
