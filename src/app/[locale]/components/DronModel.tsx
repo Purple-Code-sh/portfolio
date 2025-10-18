@@ -1,7 +1,7 @@
 "use client";
 
 import * as THREE from "three";
-import React, { useEffect, type JSX } from "react";
+import React, { useEffect, useRef, type JSX } from "react";
 import { Canvas } from "@react-three/fiber";
 import { useGLTF, useAnimations } from "@react-three/drei";
 import { GLTF } from "three-stdlib";
@@ -63,7 +63,7 @@ type GLTFResult = GLTF & {
 };
 
 function DronModel(props: JSX.IntrinsicElements["group"]) {
-  const group = React.useRef<THREE.Group>(null);
+  const group = useRef<THREE.Group>(null);
   const { nodes, materials, animations } = useGLTF(
     "/drone.glb"
   ) as unknown as GLTFResult;
@@ -81,7 +81,7 @@ function DronModel(props: JSX.IntrinsicElements["group"]) {
         <group
           name="Sketchfab_model"
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={0.2}
+          scale={0.03}
         >
           <group name="BusterDronefbx" rotation={[Math.PI / 2, 0, 0]}>
             <group name="Object_2">
@@ -557,11 +557,11 @@ export default function DronComponent() {
       className="absolute inset-0 mx-auto z-30"
       style={{ width: "90vw", height: "90dvh" }}
     >
-      <Canvas camera={{ position: [0, 0, 0], near: 0.1, far: 1000 }}>
-        <ambientLight intensity={1.5} />
-        <directionalLight position={[5, 5, 5]} intensity={1} />
+      <Canvas camera={{ position: [10, 1, 50], near: 0.1, far: 1000 }}>
+        <ambientLight intensity={1.5} color={"#d5e6da"} />
+        <directionalLight position={[-10, 5, -80]} intensity={1} />
 
-        <DronModel position={[30, 10, 20]} />
+        <DronModel position={[12, 2, 40]} />
       </Canvas>
     </figure>
   );
