@@ -11,7 +11,6 @@ import {
 import { ReactNode } from "react";
 import { routing } from "@/i18n/routing";
 import LanguageDetector from "@/components/LanguageDetector";
-import DebugLanguageDetector from "@/components/DebugLanguageDetector";
 import ChangeLanguage from "@/components/ChangeLanguage";
 import "@/app/globals.css";
 

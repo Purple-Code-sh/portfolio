@@ -1,6 +1,5 @@
 "use client";
 import { motion } from "motion/react";
-import { article } from "motion/react-client";
 import { useTranslations } from "next-intl";
 
 export default function HeroText() {
