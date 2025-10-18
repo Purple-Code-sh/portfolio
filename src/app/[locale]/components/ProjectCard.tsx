@@ -9,6 +9,13 @@ const TECHNOLOGY_ICONS: { [key: string]: string } = {
   cloudflare: "/tech-icons/cloudflare.svg",
   next: "/tech-icons/next.png",
   typescript: "/tech-icons/typescript.svg",
+  aws: "/tech-icons/aws.svg",
+  zustand: "/tech-icons/zustand.svg",
+  node: "/tech-icons/node.png",
+  react: "/tech-icons/react.svg",
+  npm: "/tech-icons/npm.svg",
+  github: "/tech-icons/github.svg",
+  mysql: "/tech-icons/mysql.svg",
   default: "/tech-icons/default.svg",
 };
 

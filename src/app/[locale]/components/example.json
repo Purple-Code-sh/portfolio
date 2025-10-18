@@ -1,0 +1,34 @@
+{
+  "name": "Propexito",
+  "description": "Sitio web de cursos sobre operaciones financieras y plataforma de inversiones.",
+  "responsibilities": [
+    "Gestión y optimización de controladores de carga (loaders) de componentes.",
+    "Actualización y mantenimiento del sistema de internacionalización (traducciones).",
+    "Desarrollo e implementación de nuevas funcionalidades.",
+    "Depuración y corrección de errores en el sistema de notificaciones.",
+    "Maquetación (UI) y creación de nuevas secciones y componentes reutilizables."
+  ],
+  "teams": [
+    "Líderes de proyecto - Dubái",
+    "Equipo de Planeación - Chipre",
+    "Equipo de Desarrollo - México",
+    "Equipo de Desarrollo - Israel",
+    "Equipo de Diseño - Israel"
+  ],
+  "imagePreview": "/example.webp",
+  "technologies": [
+    "next",
+    "react",
+    "typescript",
+    "tailwind",
+    "css",
+    "cloudflare",
+    "node",
+    "zustand",
+    "aws",
+    "github",
+    "mysql",
+    "npm"
+  ],
+  "scope": "Internacional"
+}

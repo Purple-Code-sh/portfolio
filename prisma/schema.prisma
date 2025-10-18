@@ -17,3 +17,15 @@ model Landing {
   technologies String[]
   description  String
 }
+
+model Project {
+  id               Int      @id @default(autoincrement())
+  name             String   @unique
+  description      String   @db.Text
+  responsibilities String[] 
+  teams            String[]
+  imagePreview     String
+  technologies     String[]
+  scope            String
+  site_url         String?
+}
