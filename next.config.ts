@@ -10,6 +10,12 @@ const nextConfig: NextConfig = {
         port: "",
         pathname: "/landings/**",
       },
+      {
+        protocol: "https",
+        hostname: "portfolio.shmin-ib.com",
+        port: "",
+        pathname: "/projects/**",
+      },
     ],
   },
 };

@@ -1,5 +1,6 @@
 import PagesCreated from "./sections/PagesCreated";
 import Hero from "./sections/Hero";
+import ImportantProjects from "./sections/ImportantProjects";
 
 export default function HomePage() {
   return (
@@ -8,6 +9,7 @@ export default function HomePage() {
 
       <section className="sh-container">
         <PagesCreated />
+        <ImportantProjects />
       </section>
     </main>
   );

@@ -1,9 +1,9 @@
-type ProjectModalProps = {
+type LandingModalProps = {
   src: string;
   onClose: () => void;
 };
 
-export function ProjectModal({ src, onClose }: ProjectModalProps) {
+export function LandingModal({ src, onClose }: LandingModalProps) {
   return (
     <div
       className="fixed inset-0 bg-black/80 flex justify-center items-center z-50"
@@ -20,8 +20,11 @@ export function ProjectModal({ src, onClose }: ProjectModalProps) {
         >
           &times;
         </button>
-
-        <p>{src}</p>
+        <iframe
+          src={src}
+          title="Project Preview"
+          className="w-full h-full border-0 rounded-md"
+        />
       </div>
     </div>
   );

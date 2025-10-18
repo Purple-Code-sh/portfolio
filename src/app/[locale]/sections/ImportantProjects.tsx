@@ -1,16 +1,16 @@
-"use client"; // <-- ¡MUY IMPORTANTE! Esto lo convierte en un Client Component
+"use client";
 
 import { useTranslations } from "next-intl";
 import { useState, useEffect } from "react";
-import { Dices, LoaderCircle } from "lucide-react";
-import { Landing } from "@prisma/client";
-import { LandingCard } from "../components/LandingCard";
-import { LandingModal } from "../components/LandingModal";
+import { LoaderCircle } from "lucide-react";
+import { Project } from "@prisma/client";
+import { ProjectCard } from "../components/ProjectCard";
+import { ProjectModal } from "../components/ProjectModal";
 
-export default function PagesCreated() {
+export default function ImportantProjects() {
   const t = useTranslations("Landings");
   // Estado para guardar los landings que se están mostrando
-  const [landings, setLandings] = useState<Landing[]>([]);
+  const [projects, setProjects] = useState<Project[]>([]);
   // Estado para el modal (funciona igual que antes)
   const [selectedProjectSrc, setSelectedProjectSrc] = useState<string | null>(
     null
@@ -19,15 +19,15 @@ export default function PagesCreated() {
   const [isLoading, setIsLoading] = useState(true);
 
   // Función para llamar a tu API y traer 3 landings nuevos
-  const fetchRandomLandings = async () => {
+  const fetchProjects = async () => {
     setIsLoading(true); // Activa el indicador de carga
     try {
-      const response = await fetch("/api/landings/random");
+      const response = await fetch("/api/projects");
       if (!response.ok) {
         throw new Error("La respuesta de la red no fue exitosa");
       }
       const data = await response.json();
-      setLandings(data); // Actualiza el estado con los nuevos landings
+      setProjects(data); // Actualiza el estado con los nuevos landings
     } catch (error) {
       console.error("Error al traer los landings:", error);
       // Opcional: podrías poner un estado de error aquí para mostrar un mensaje al usuario
@@ -38,7 +38,7 @@ export default function PagesCreated() {
 
   // useEffect se ejecuta UNA SOLA VEZ cuando el componente se carga por primera vez
   useEffect(() => {
-    fetchRandomLandings();
+    fetchProjects();
   }, []); // El array vacío asegura que solo se ejecute al inicio
 
   return (
@@ -48,15 +48,6 @@ export default function PagesCreated() {
           {t("title")}{" "}
           <span className="md:text-base text-sm">{t("count")}</span>
         </h2>
-        {/* El botón ahora llama a la función fetchRandomLandings */}
-        <button
-          onClick={fetchRandomLandings}
-          disabled={isLoading}
-          className="bg-gradient-to-t from-primary-500 to-gray-100 hover:from-primary-400 hover:to-white transition-colors duration-300 hover:scale-[102%] cursor-pointer w-fit flex shrink-0 gap-2 items-center text-black font-bold py-2 px-4 rounded-full text-sm md:text-base disabled:bg-neutral-400 disabled:cursor-not-allowed"
-        >
-          {isLoading ? t("loading") : t("button")}
-          <Dices className="h-5 w-auto font-bold transition-transform" />
-        </button>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 min-h-[300px]">
@@ -67,11 +58,11 @@ export default function PagesCreated() {
           </div>
         ) : (
           // Mapea sobre los landings guardados en el estado
-          landings.map((landing) => (
-            <LandingCard
-              key={landing.id}
-              landing={landing}
-              onClick={() => setSelectedProjectSrc(landing.htmlSrc)}
+          projects.map((project) => (
+            <ProjectCard
+              key={project.id}
+              project={project}
+              onClick={() => setSelectedProjectSrc(project.description)}
             />
           ))
         )}
@@ -79,7 +70,7 @@ export default function PagesCreated() {
 
       {/* El modal no necesita cambios */}
       {selectedProjectSrc && (
-        <LandingModal
+        <ProjectModal
           src={selectedProjectSrc}
           onClose={() => setSelectedProjectSrc(null)}
         />
