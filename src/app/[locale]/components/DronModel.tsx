@@ -592,7 +592,7 @@ export default function DronComponent() {
   return (
     <figure
       className="absolute inset-0 mx-auto z-10 opacity-85"
-      style={{ width: "90vw", height: "90vh" }}
+      style={{ width: "90vw", height: "92vh" }}
     >
       <Canvas camera={{ position: [10, 1, 50], near: 0.1, far: 1000 }}>
         <ambientLight intensity={1.5} color={"#d5e6da"} />
