@@ -6,7 +6,7 @@ import { useTranslations } from "next-intl";
 export default function HeroText() {
   const t = useTranslations("Hero");
   return (
-    <article className="mt-4 md:mt-12 lg:mt-16 h-[90dvh] sh-container z-30 bg-transparent">
+    <article className="mt-4 md:mt-12 lg:mt-16 h-[92vh] sh-container z-30 bg-transparent">
       <motion.p
         className="text-center md:text-left text-base md:text-lg mb-4 text-balance text-primary-400 md:border-l-4 border-primary-500/30 pl-2"
         initial={{ opacity: 0, x: -50 }}
