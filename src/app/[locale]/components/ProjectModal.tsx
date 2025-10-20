@@ -22,7 +22,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
         {/* --- Botón de Cerrar (Mejorado) --- */}
         <button
           onClick={onClose}
-          className="absolute top-3 right-3 lg:top-4 lg:right-4 bg-neutral-700 hover:bg-neutral-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-lg z-10 transition-colors"
+          className="absolute top-3 right-3 lg:top-4 lg:right-4 bg-neutral-700 cursor-pointer hover:bg-neutral-600 text-white rounded-full w-8 h-8 flex items-center justify-center text-lg z-10 transition-colors"
           aria-label="Cerrar modal"
         >
           <X className="h-5 w-5" /> {/* Usamos el ícono 'X' */}
@@ -79,10 +79,10 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                   {t("stack")}
                 </h2>
                 <div className="flex flex-wrap gap-3">
-                  {project.technologies.map((tech) => (
+                  {project.technologies.map((tech: string) => (
                     <span
                       key={tech}
-                      className="text-sm font-medium bg-neutral-700 text-neutral-200 px-3 py-1.5 rounded-full shadow-md hover:bg-primary-700 transition-colors"
+                      className="text-sm font-medium bg-neutral-800 text-neutral-200 px-3 py-1.5 rounded-sm shadow-md hover:bg-neutral-700 transition-colors"
                     >
                       {tech}
                     </span>
@@ -91,22 +91,22 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
               </div>
             </div>
 
-            {/* Columna Derecha (o abajo en móvil) */}
             <div>
-              {/* Mis Responsabilidades */}
               <div className="mb-8">
                 <h2 className="text-xl font-semibold text-white mb-4">
                   {t("resp")}
                 </h2>
                 <ul className="list-none space-y-3 text-neutral-300 text-base">
-                  {project.responsibilities.map((resp, index) => (
-                    <li key={index} className="flex items-start">
-                      <span className="text-primary-400 mr-2 text-xl font-bold">
-                        &bull;
-                      </span>
-                      <span>{t(project.name + "." + resp)}</span>
-                    </li>
-                  ))}
+                  {project.responsibilities.map(
+                    (resp: string, index: number) => (
+                      <li key={index} className="flex items-start">
+                        <span className="text-primary-400 mr-2 text-xl font-bold">
+                          &bull;
+                        </span>
+                        <span>{t(project.name + "." + resp)}</span>
+                      </li>
+                    )
+                  )}
                 </ul>
               </div>
 
@@ -116,7 +116,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                   {t("teams")}
                 </h2>
                 <ul className="list-none space-y-3 text-neutral-300 text-base">
-                  {project.teams.map((team, index) => (
+                  {project.teams.map((team: string, index: number) => (
                     <li key={index} className="flex items-start">
                       <span className="text-primary-400 mr-2 text-xl font-bold">
                         &bull;

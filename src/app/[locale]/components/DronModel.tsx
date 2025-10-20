@@ -566,8 +566,8 @@ export default function DronComponent() {
       // Breakpoint para pantallas grandes (lg: 1024px)
       if (window.innerWidth >= 1280) {
         // "xl" breakpoint
-        setModelPosition([13, 1, 42]);
-      } else if (window.innerWidth >= 1024) {
+        setModelPosition([13, 1, 41]);
+      } else if (window.innerWidth >= 1030) {
         // "lg" breakpoint
         setModelPosition([17, -2, 38]);
       } else {
@@ -591,7 +591,7 @@ export default function DronComponent() {
 
   return (
     <figure
-      className="absolute inset-0 mx-auto z-10 opacity-85"
+      className="absolute inset-0 mx-auto z-10 opacity-90"
       style={{ width: "90vw", height: "92vh" }}
     >
       <Canvas camera={{ position: [10, 1, 50], near: 0.1, far: 1000 }}>
