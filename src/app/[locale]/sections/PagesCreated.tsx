@@ -1,4 +1,4 @@
-"use client"; // <-- ¡MUY IMPORTANTE! Esto lo convierte en un Client Component
+"use client";
 
 import { useTranslations } from "next-intl";
 import { useState, useEffect } from "react";
@@ -9,46 +9,40 @@ import { LandingModal } from "../components/LandingModal";
 
 export default function PagesCreated() {
   const t = useTranslations("Landings");
-  // Estado para guardar los landings que se están mostrando
   const [landings, setLandings] = useState<Landing[]>([]);
-  // Estado para el modal (funciona igual que antes)
   const [selectedProjectSrc, setSelectedProjectSrc] = useState<string | null>(
     null
   );
-  // Estado para mostrar un indicador de carga
   const [isLoading, setIsLoading] = useState(true);
 
-  // Función para llamar a tu API y traer 3 landings nuevos
   const fetchRandomLandings = async () => {
-    setIsLoading(true); // Activa el indicador de carga
+    setIsLoading(true);
     try {
       const response = await fetch("/api/landings/random");
       if (!response.ok) {
         throw new Error("La respuesta de la red no fue exitosa");
       }
       const data = await response.json();
-      setLandings(data); // Actualiza el estado con los nuevos landings
+      setLandings(data);
     } catch (error) {
       console.error("Error al traer los landings:", error);
-      // Opcional: podrías poner un estado de error aquí para mostrar un mensaje al usuario
     } finally {
-      setIsLoading(false); // Desactiva el indicador de carga
+      setIsLoading(false);
     }
   };
 
-  // useEffect se ejecuta UNA SOLA VEZ cuando el componente se carga por primera vez
   useEffect(() => {
     fetchRandomLandings();
-  }, []); // El array vacío asegura que solo se ejecute al inicio
+  }, []);
 
   return (
-    <section className="w-full pb-8 md:pb-12 xl:pb-16">
+    <section className="w-full pb-12 md:pb-16 xl:pb-20">
       <div className="mb-6 lg:mb-8 flex gap-3 justify-between flex-wrap items-center">
         <h2>
           {t("title")}{" "}
-          <span className="md:text-base text-sm">{t("count")}</span>
+          <span className="sm:text-lg lg:text-xl text-base">{t("count")}</span>
         </h2>
-        {/* El botón ahora llama a la función fetchRandomLandings */}
+
         <button
           onClick={fetchRandomLandings}
           disabled={isLoading}
@@ -61,12 +55,10 @@ export default function PagesCreated() {
 
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 min-h-[300px]">
         {isLoading ? (
-          // Muestra un ícono de carga mientras se traen los datos
           <div className="col-span-3 flex justify-center items-center">
             <LoaderCircle className="h-12 w-12 animate-spin" />
           </div>
         ) : (
-          // Mapea sobre los landings guardados en el estado
           landings.map((landing) => (
             <LandingCard
               key={landing.id}
@@ -77,7 +69,6 @@ export default function PagesCreated() {
         )}
       </div>
 
-      {/* El modal no necesita cambios */}
       {selectedProjectSrc && (
         <LandingModal
           src={selectedProjectSrc}

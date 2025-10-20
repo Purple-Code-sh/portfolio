@@ -50,8 +50,8 @@ export function ProjectCard({ project, onClick }: ProjectCardProps) {
               src={TECHNOLOGY_ICONS[techName] || TECHNOLOGY_ICONS.default}
               alt={techName}
               title={techName}
-              className="h-4 md:h-5 lg:h-6 opacity-90 hover:opacity-100 max-w-12 w-auto object-contain"
-              width={56}
+              className="h-5 lg:h-6 opacity-90 hover:opacity-100 max-w-12 w-auto object-contain"
+              width={64}
               height={28}
             />
           ))}

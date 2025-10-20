@@ -50,9 +50,9 @@ export function LandingCard({ landing, onClick }: LandingCardProps) {
               src={TECHNOLOGY_ICONS[techName] || TECHNOLOGY_ICONS.default}
               alt={techName}
               title={techName}
-              className="h-4 md:h-5 lg:h-6 opacity-90 hover:opacity-100 w-auto object-contain"
+              className="h-5 lg:h-6 opacity-90 hover:opacity-100 max-w-12 w-auto object-contain"
               width={64}
-              height={24}
+              height={28}
             />
           ))}
         </div>

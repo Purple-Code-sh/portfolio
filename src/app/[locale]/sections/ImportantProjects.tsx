@@ -41,7 +41,7 @@ export default function ImportantProjects() {
   }, []); // El array vacío asegura que solo se ejecute al inicio
 
   return (
-    <section className="w-full pb-8 md:pb-12 xl:pb-16">
+    <section className="w-full py-12 md:py-16 xl:py-20">
       <div className="mb-6 lg:mb-8 flex gap-3 justify-between flex-wrap items-center">
         <h2>{t("title")}</h2>
       </div>
