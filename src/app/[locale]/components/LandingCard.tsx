@@ -1,23 +1,6 @@
 import Image from "next/image";
 import type { Landing } from "@prisma/client"; // Import the type from the parent
-
-const TECHNOLOGY_ICONS: { [key: string]: string } = {
-  html: "/tech-icons/html.svg",
-  tailwind: "/tech-icons/tailwind.svg",
-  css: "/tech-icons/css.svg",
-  "javascript-ES6": "/tech-icons/js.svg",
-  cloudflare: "/tech-icons/cloudflare.svg",
-  next: "/tech-icons/next.png",
-  typescript: "/tech-icons/typescript.svg",
-  aws: "/tech-icons/aws.svg",
-  zustand: "/tech-icons/zustand.svg",
-  node: "/tech-icons/node.png",
-  react: "/tech-icons/react.svg",
-  npm: "/tech-icons/npm.svg",
-  github: "/tech-icons/github.svg",
-  mysql: "/tech-icons/mysql.svg",
-  default: "/tech-icons/default.svg",
-};
+import { TECHNOLOGY_ICONS } from "../utils/tech-icons";
 
 type LandingCardProps = {
   landing: Landing;
@@ -47,7 +30,9 @@ export function LandingCard({ landing, onClick }: LandingCardProps) {
           {landing.technologies.map((techName) => (
             <Image
               key={techName}
-              src={TECHNOLOGY_ICONS[techName] || TECHNOLOGY_ICONS.default}
+              src={
+                TECHNOLOGY_ICONS[techName].url || TECHNOLOGY_ICONS.default.url
+              }
               alt={techName}
               title={techName}
               className="h-5 lg:h-6 opacity-90 hover:opacity-100 max-w-12 w-auto object-contain"
