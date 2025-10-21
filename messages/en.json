@@ -43,6 +43,36 @@
       "team5": "Design Team - Israel",
 
       "scope": "International"
+    },
+    "LandingGenerator": {
+      "title": "Landing Generator",
+      "desc": "A web application that automates the creation of complete, production-ready landing pages. It leverages the Gemini API (AI) for dynamic content generation based on predefined design templates.",
+      "resp1": "Provided technical leadership and strategic decision-making for defining the application's functional and technical requirements.",
+      "resp2": "Designed and engineered prompts (Prompt Engineering) for precise content generation and AI-driven HTML/CSS code structuring.",
+      "resp3": "Developed a library of reusable design components and templates using HTML, Tailwind CSS, and JavaScript.",
+      "resp4": "Implemented automation modules to dynamically populate templates with AI-generated content.",
+      "resp5": "Architected and developed the Gemini API (AI) integration, managing the data flow (request/response) and service orchestration.",
+      "resp6": "Defined the deployment strategy and configured the cloud service infrastructure.",
+      "team1": "Project Leaders - Israel",
+      "team2": "Planning Team - Mexico",
+      "team3": "Development Team - Mexico",
+      "scope": "International"
+    },
+    "LatamNews": {
+      "title": "Latam News",
+      "desc": "A financial news portal for Latam, developed from scratch. Features a custom CMS, SEO automation (sitemaps, metadata), and dynamic content generation assisted by AI.",
+      "resp1": "Provided technical leadership in defining the platform's architecture and gathering functional and non-functional requirements.",
+      "resp2": "Designed and implemented a Prompt Engineering (AI) system for content generation (summarization, translation) and the automatic, template-based creation of code structures (article pages).",
+      "resp3": "Full leadership of the Frontend team, overseeing the development lifecycle (design, implementation, and QA) for all portal sections.",
+      "resp4": "Defined the frontend's data architecture and state management. Designed rendering strategies (SSR/ISR) to optimize performance and SEO.",
+      "resp5": "Collaborated closely with Backend for REST API design, data contract definition, and deployment architecture planning.",
+      "resp6": "Developed automation scripts for dynamic sitemap and metadata generation (Technical SEO), ensuring proper content indexing.",
+      "team1": "Project Leaders - Cyprus",
+      "team2": "Planning Team - Mexico",
+      "team3": "Content Team - Mexico",
+      "team4": "Design Team - Mexico",
+      "team5": "Development Team - Israel",
+      "team6": "Development Team - Mexico"
     }
   }
 }
