@@ -4,8 +4,12 @@ import ParallaxBg from "../components/ParallaxBg";
 export default function Hero() {
   return (
     <section>
-      <HeroText />
-      <ParallaxBg />
+      <div className="z-40">
+        <HeroText />
+      </div>
+      <div className="z-30">
+        <ParallaxBg />
+      </div>
     </section>
   );
 }

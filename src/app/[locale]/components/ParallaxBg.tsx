@@ -15,11 +15,11 @@ export default function ParallaxBg() {
     <section className="absolute inset-0 ">
       <div className="relative overflow-hidden h-screen ">
         {/* Background */}
-        {/* <div className="absolute inset-0 w-full h-[91vh] -z-50 bg-[linear-gradient(to_bottom,rgba(11,17,13,1),rgba(0,0,0,0)),url('/bg-lands-2.jpg')] bg-cover bg-center bg-no-repeat" /> */}
+        <div className="bg-[url('/bg-grany-2.webp')] mix-blend-difference opacity-80 bg-cover absolute inset-0 bg-top-left bg-no-repeat -z-10" />
 
         <div className="w-full h-11/12 lg:w-3/4 lg:top-0 lg:right-0 absolute bottom-0">
           <div className="relative h-full w-full bg-transparent p-8">
-            <div className="absolute bottom-4 right-4 z-30 w-auto rounded-md hidden lg:block bg-shBlack p-3 text-sm text-txt-300/60">
+            <div className="absolute bottom-4 right-4 z-30 w-auto rounded-md hidden lg:block bg-shBlack py-2 px-5 text-sm text-txt-300/60">
               {/* Fila 1: Tecla Shift */}
               <div className="flex items-center justify-end gap-1">
                 <span>Mantén</span>
@@ -70,7 +70,7 @@ export default function ParallaxBg() {
             </div>
           </div>
         </div>
-        <div className="w-full h-11/12 lg:w-3/4 lg:top-0 lg:right-0 absolute bottom-0 z-20">
+        <div className="w-full h-11/12 lg:w-5/6 lg:top-0 lg:right-0 absolute bottom-0 z-20 brightness-110">
           <Suspense
             fallback={
               <div className="flex items-end lg:items-center p-8 justify-center h-full w-full text-txt-300/80">
