@@ -12,7 +12,21 @@
     "greeting": "Hola, soy Shmin.",
     "role": "Ingeniero de Software",
     "motto": "Escalando Equipos con Código.",
-    "passion": "Me apasiona crear soluciones con React, Next.js y Python que resuelven complejos desafíos empresariales mediante automatización y herramientas impulsadas por IA."
+    "passion": "Me apasiona crear soluciones con React, Next.js y Python que resuelven complejos desafíos empresariales mediante automatización y herramientas impulsadas por IA.",
+    "controls": {
+      "orbit": "Orbitar",
+      "twoFingers": "(2 dedos)",
+      "zoom": "Zoom",
+      "pinching": "(Pellizcar)",
+      "pan": "Mover",
+      "threeFingers": "(3 dedos)",
+      "hold": "Mantén",
+      "shift": "Shift",
+      "to": "para:",
+      "panClick": "Mover (Click)",
+      "zoomWheel": "Zoom (Rueda)",
+      "loading": "Cargando Modelo 3D..."
+    }
   },
   "Landings": {
     "title": "Landing Pages Desarrolladas",
@@ -76,6 +90,7 @@
     }
   },
   "UnderConstruction": {
-    "title": "La versión completa de este sitio web está en construcción. Pero puedes revisar la información de mis proyectos en la parte superior o ir a mis cuentas de redes sociales para seguir mi progreso."
+    "title": "La versión completa de este sitio web está en construcción. Pero puedes revisar la información de mis proyectos en la parte superior o ir a mis cuentas de redes sociales para seguir mi progreso.",
+    "download": "Descargar Currículum"
   }
 }

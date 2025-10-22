@@ -33,7 +33,7 @@ export default function HeroText() {
         className="text-center md:text-left text-xl z-40 md:text-4xl font-medium mb-2 md:mb-6"
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.6, duration: 0.5 }}
+        transition={{ delay: 0.5, duration: 0.5 }}
       >
         {t("motto")}
       </motion.p>
@@ -42,7 +42,7 @@ export default function HeroText() {
         className={`${inter.className} text-center md:text-left z-40 text-sm md:text-base text-balance font-light md:max-w-prose text-txt-200`}
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ delay: 0.5, duration: 1 }}
+        transition={{ delay: 0.6, duration: 0.6 }}
       >
         {t("passion")}
       </motion.p>

@@ -12,7 +12,21 @@
     "greeting": "Hi, I'm Shmin.",
     "role": "Software Engineer",
     "motto": "Scaling Teams with Code.",
-    "passion": "I'm passionate about building solutions with React, Next.js, and Python that solve complex business challenges through automation and AI-powered tools."
+    "passion": "I'm passionate about building solutions with React, Next.js, and Python that solve complex business challenges through automation and AI-powered tools.",
+    "controls": {
+      "orbit": "Orbit",
+      "twoFingers": "(2 fingers)",
+      "zoom": "Zoom",
+      "pinching": "(Pinching)",
+      "pan": "Pan",
+      "threeFingers": "(3 fingers)",
+      "hold": "Hold",
+      "shift": "Shift",
+      "to": "to:",
+      "panClick": "Pan (Click)",
+      "zoomWheel": "Zoom (Wheel)",
+      "loading": "Loading 3D Model..."
+    }
   },
   "Landings": {
     "title": "Landing Pages Developed",
@@ -77,6 +91,7 @@
     }
   },
   "UnderConstruction": {
-    "title": "The full version of this website is under construction. But you can check my projects information on the top or follow my social accounts to track my progress."
+    "title": "The full version of this website is under construction. But you can check my projects information on the top or follow my social accounts to track my progress.",
+    "download": "Download Resume"
   }
 }
