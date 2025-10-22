@@ -30,13 +30,11 @@
     "Propexito": {
       "title": "Propexito",
       "desc": "Sitio web de cursos sobre operaciones financieras y plataforma de inversiones.",
-
       "resp1": "Gestión y optimización de controladores de carga (loaders) de componentes.",
       "resp2": "Actualización y mantenimiento del sistema de internacionalización (traducciones).",
       "resp3": "Desarrollo e implementación de nuevas funcionalidades.",
       "resp4": "Depuración y corrección de errores en el sistema de notificaciones.",
       "resp5": "Maquetación (UI) y creación de nuevas secciones y componentes reutilizables.",
-
       "team1": "Lideres de proyecto - Dubai",
       "team2": "Equipo de Planeación - Chipre",
       "team3": "Equipo de Desarrollo - Mexico",
@@ -44,6 +42,40 @@
       "team5": "Equipo de Diseño - Israel",
 
       "scope": "Internacional"
+    },
+    "LandingGenerator": {
+      "title": "Landing Generator",
+      "desc": "Aplicación web que automatiza la creación de landing pages completas y listas para producción. Utiliza la API de Gemini (IA) para la generación de contenido dinámico sobre plantillas de diseño predefinidas.",
+      "resp1": "Liderazgo técnico y toma de decisiones estratégicas para la definición de los requerimientos funcionales y técnicos de la aplicación.",
+      "resp2": "Diseño e ingeniería de prompts (Prompt Engineering) para la generación precisa de contenido y la estructuración de código HTML/CSS mediante IA.",
+      "resp3": "Desarrollo de una biblioteca de componentes y plantillas de diseño reutilizables con HTML, Tailwind CSS y JavaScript.",
+      "resp4": "Implementación de módulos de automatización para poblar dinámicamente las plantillas con el contenido generado por la IA.",
+      "resp5": "Arquitectura y desarrollo de la integración con la API de Gemini (IA), gestionando el flujo de datos (request/response) y la orquestación de servicios.",
+      "resp6": "Definición de la estrategia de despliegue (deployment) y configuración de la infraestructura de servicios en la nube.",
+      "team1": "Lideres de proyecto - Israel",
+      "team2": "Equipo de Planeación - Mexico",
+      "team3": "Equipo de Desarrollo - Mexico",
+      "scope": "Internacional"
+    },
+    "LatamNews": {
+      "title": "Latam News",
+      "desc": "Portal de noticias financieras para Latam, desarrollado *from scratch*. Incluye un CMS a medida, automatización de SEO (sitemaps, metadatos) y generación de contenido dinámico asistido por IA.",
+      "resp1": "Liderazgo técnico en la definición de la arquitectura de la plataforma y el levantamiento de requerimientos funcionales y no funcionales.",
+      "resp2": "Diseño e implementación de un sistema de *Prompt Engineering* (IA) para la generación de contenido (sumarización, traducción) y la creación automática de estructuras de código (páginas de artículos) basadas en plantillas.",
+      "resp3": "Liderazgo completo del equipo Frontend, supervisando el ciclo de vida de desarrollo (diseño, implementación y QA) de todas las secciones del portal.",
+      "resp4": "Definición de la arquitectura de datos del *frontend* y la gestión del estado (state management). Diseño de estrategias de renderizado (SSR/ISR) para optimizar el *performance* y el SEO.",
+      "resp5": "Colaboración estrecha con Backend para el diseño de la API REST, la definición de contratos de datos y la planificación de la arquitectura de despliegue.",
+      "resp6": "Desarrollo de *scripts* de automatización para la generación dinámica de *sitemaps* y metadatos (SEO técnico), asegurando la correcta indexación del contenido.",
+      "team1": "Lideres de proyecto - Chipre",
+      "team2": "Equipo de Planeación - Mexico",
+      "team3": "Equipo de Contenidos - Mexico",
+      "team4": "Equipo de Diseño - Mexico",
+      "team5": "Equipo de Desarrollo - Israel",
+      "team6": "Equipo de Desarrollo - Mexico",
+      "scope": "Latinoamérica"
     }
+  },
+  "UnderConstruction": {
+    "title": "La versión completa de este sitio web está en construcción. Pero puedes revisar la información de mis proyectos en la parte superior o ir a mis cuentas de redes sociales para seguir mi progreso."
   }
 }

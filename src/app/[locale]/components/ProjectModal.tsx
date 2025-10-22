@@ -2,6 +2,7 @@ import { Project } from "@prisma/client";
 import { Link, X } from "lucide-react"; // Importa el ícono 'X' para cerrar
 import Image from "next/image"; // Para optimización de imágenes
 import { useTranslations } from "next-intl";
+import { TECHNOLOGY_ICONS } from "../utils/tech-icons";
 
 type ProjectModalProps = {
   project: Project;
@@ -84,7 +85,7 @@ export function ProjectModal({ project, onClose }: ProjectModalProps) {
                       key={tech}
                       className="text-sm font-medium bg-neutral-800 text-neutral-200 px-3 py-1.5 rounded-sm shadow-md hover:bg-neutral-700 transition-colors"
                     >
-                      {tech}
+                      {TECHNOLOGY_ICONS[tech].name || tech}
                     </span>
                   ))}
                 </div>
