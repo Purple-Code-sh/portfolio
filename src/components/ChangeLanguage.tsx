@@ -82,12 +82,12 @@ export default function LanguageSelector() {
   return (
     <div className="text-txt-300 relative flex justify-end pt-3 z-50 gap-6 sh-container">
       <Link href="/">
-        <p className="bg-transparent flex cursor-pointer items-center space-x-2 px-4 py-2 backdrop-blur-2xl transition-colors hover:text-white hover:underline duration-300">
+        <p className="bg-transparent flex cursor-pointer items-center space-x-2 px-4 py-2 transition-colors hover:text-white hover:underline duration-300">
           Home
         </p>
       </Link>
       <Link href="/blog/">
-        <p className="bg-transparent flex cursor-pointer items-center space-x-2 px-4 py-2 backdrop-blur-2xl transition-colors hover:text-white hover:underline duration-300">
+        <p className="bg-transparent flex cursor-pointer items-center space-x-2 px-4 py-2 transition-colors hover:text-white hover:underline duration-300">
           Blog
         </p>
       </Link>

@@ -28,9 +28,9 @@ export default function Module5() {
       <TitleH1 content="Módulo 5: Taller de Migración (Funcional con Hooks)" />
 
       <TextP>
-        Este es el ejercicio práctico. Tu tarea en IBM será exactamente esta:
-        tomar un archivo <CodeInline>.jsx</CodeInline> escrito con clases (como
-        el del Módulo 4) y refactorizarlo a Hooks sin romper la funcionalidad.
+        Este es el ejercicio práctico. La tarea es: tomar un archivo{" "}
+        <CodeInline>.jsx</CodeInline> escrito con clases (como el del Módulo 4)
+        y refactorizarlo a Hooks sin romper la funcionalidad.
       </TextP>
 
       {/* --- SECCIÓN 1: EL MAPEO 1:1 --- */}

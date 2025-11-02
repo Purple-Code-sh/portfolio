@@ -36,7 +36,7 @@ export default function Module6() {
         sin que te despidan?
       </TextP>
       <TextP>
-        En una empresa como IBM, el legacy code existe por una razón: funciona y
+        En varias empresas, el legacy code existe por una razón: funciona y
         genera dinero. Tu principal directiva no es &quot;modernizar&quot;; es{" "}
         <Strong>&quot;no romper&quot;</Strong>.
       </TextP>
@@ -113,10 +113,9 @@ export default function Module6() {
         </ol>
 
         <HighlightBox>
-          En la entrevista, si te preguntan &quot;Cómo migras un
-          componente&quot;, tu primera respuesta debe ser: &quot;Primero, me
-          aseguro de que tenga una cobertura de pruebas completa con React
-          Testing Library&quot;.
+          Si alguien te pregunta &quot;Cómo migras un componente&quot;, tu
+          primera respuesta debe ser: &quot;Primero, me aseguro de que tenga una
+          cobertura de pruebas completa con React Testing Library&quot;.
         </HighlightBox>
       </section>
 

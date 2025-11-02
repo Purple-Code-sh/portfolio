@@ -33,8 +33,9 @@ export default function Module4() {
         de ciclo de vida o cualquier comportamiento complejo.
       </TextP>
       <TextP>
-        Los proyectos de IBM que requieren mantenimiento están llenos de esta
-        sintaxis. Tu trabajo será entenderla para poder migrarla.
+        Los proyectos que requieren mantenimiento o una actualización a métodos
+        más modernos están llenos de esta sintaxis. El trabajo está en
+        entenderla para poder migrarla.
       </TextP>
 
       {/* --- SECCIÓN 1: SINTAXIS BÁSICA --- */}
@@ -198,7 +199,7 @@ incrementar() {
 
         <SubtitleH3 content='Solución 1: .bind() en el Constructor (La forma "clásica")' />
         <TextP>
-          Le dices a JavaScript que &quot;ate&quot; permanentemente el{" "}
+          Le dices a JavaScript que &quot;relacione&quot; permanentemente el{" "}
           <CodeInline>this</CodeInline> de la clase al método.
         </TextP>
         <CodeBlock>

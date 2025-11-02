@@ -28,11 +28,10 @@ export default function Module3() {
       <TitleH1 content="Módulo 3: Vite (El Estándar Moderno)" />
 
       <TextP>
-        Has dominado Webpack, el estándar legacy. Ahora, vamos a ver a Vite, el
-        estándar moderno. La razón por la que IBM te pregunta por esto es porque
-        los proyectos nuevos se inician con Vite y existe una fuerte presión
-        para migrar los proyectos antiguos de Webpack a Vite y así mejorar la
-        productividad del desarrollador.
+        Ya conocimos Webpack, el estándar legacy. Ahora, vamos a ver a Vite, el
+        estándar moderno, con el cual se inician los proyectos nuevos. Hay una
+        fuerte presión para migrar los proyectos antiguos de Webpack a Vite y
+        así mejorar la productividad del desarrollador.
       </TextP>
 
       {/* --- SECCIÓN 1: LA MAGIA DE VITE --- */}
@@ -180,7 +179,7 @@ export default defineConfig({
     proxy: {
       // Redirige /api/usuarios a http://localhost:4000/api/usuarios
       '/api': {
-        target: 'http://localhost:4000', // Tu backend de Express
+        target: 'http://localhost:4000', // Puede ser un backend de Express
         changeOrigin: true,
       }
     },
@@ -222,7 +221,10 @@ export default defineConfig({
       {/* --- SECCIÓN 4: ESTRATEGIA DE MIGRACIÓN --- */}
       <section className="mb-12">
         <SubtitleH2 content="4. Estrategia de Migración (De CRA/Webpack a Vite)" />
-        <TextP>En tu trabajo en IBM, esto es lo que harías:</TextP>
+        <TextP>
+          Esto es lo que se podría hacer en caso de necesitar migrar un
+          proyecto:
+        </TextP>
         <ol className="list-decimal list-inside space-y-3 pl-5 text-sm md:text-base leading-relaxed mb-6">
           <li>
             <Strong>Instalar Dependencias:</Strong> Ejecutar{" "}

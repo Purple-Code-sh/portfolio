@@ -1,4 +1,16 @@
 import BlogIndex from "@/app/[locale]/components/BlogIndex";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Bundlers y Migración de React | Blog",
+  description:
+    "La primera parte de esta ruta define qué es un bundler, compara el funcionamiento de Webpack (loaders, plugins) con el de Vite (ESM, Rollup) y explica sus diferencias en desarrollo y producción. La segunda parte detalla el proceso de migración de componentes de React, mapeando la sintaxis de Clases (con this.state y ciclos de vida) a la sintaxis funcional moderna (con useState, useEffect y otros Hooks), e incluye estrategias de mantenimiento y pruebas para dicho proceso.",
+  robots: {
+    index: true,
+    follow: true,
+    notranslate: false,
+  },
+};
 
 const THEME_GLOSARY: {
   [key: string]: { name: string; url: string };
@@ -22,6 +34,10 @@ const THEME_GLOSARY: {
   Module5: {
     name: "Módulo 5: Taller de Migración (Funcional con Hooks)",
     url: "/blog/Bundlers-and-React-migration/module-5",
+  },
+  Module6: {
+    name: "Módulo 6: Estrategias de Mantenimiento",
+    url: "/blog/Bundlers-and-React-migration/module-6",
   },
 };
 
