@@ -1,4 +1,18 @@
 import BlogIndex from "@/app/[locale]/components/BlogIndex";
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+
+export const metadata: Metadata = {
+  title: "BLOG",
+  description:
+    "Blog sobre temas relacionados al frontend, backend y desarrollo de software",
+  robots: {
+    index: true,
+    follow: true,
+    notranslate: false,
+  },
+};
+const inter = Inter({ subsets: ["latin"] });
 
 const BLOG_ITEMS: {
   [key: string]: { name: string; url: string };

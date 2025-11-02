@@ -8,7 +8,18 @@ import {
   TextP,
   TitleH1,
 } from "@/app/[locale]/utils/blog-text-styles";
+import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+
+export const metadata: Metadata = {
+  title: "Módulo 2 | Bundlers y Migración de React",
+  description: "Webpack (El Estándar Corporativo Legacy)",
+  robots: {
+    index: true,
+    follow: true,
+    notranslate: false,
+  },
+};
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Module2() {
