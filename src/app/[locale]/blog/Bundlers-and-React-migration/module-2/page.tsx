@@ -30,11 +30,7 @@ export default function Module2() {
       <TextP>
         Bienvenido a Webpack. Esta herramienta construyó la web moderna que
         conocemos y, por esa razón, mantiene millones de líneas de código en
-        producción en empresas como IBM.
-      </TextP>
-      <TextP>
-        No puedes migrar un sistema que no entiendes. Tu trabajo de
-        mantenimiento y migración comenzará aquí.
+        producción.
       </TextP>
       <TextP>
         <Strong>Webpack es poderoso, explícito y complejo.</Strong>
