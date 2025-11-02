@@ -1,57 +1,19 @@
-import React from "react";
-import { Inter, Genos } from "next/font/google";
-
+import {
+  CodeInline,
+  HighlightBox,
+  Strong,
+  SubtitleH2,
+  SubtitleH3,
+  TextP,
+  TitleH1,
+} from "@/app/[locale]/utils/blog-text-styles";
+import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
-const genos = Genos({ subsets: ["latin"] });
-
-// --- Componentes de Estilo ---
-
-const SubtitleH2 = (props: { content: string }) => (
-  <h2
-    className={` text-3xl font-bold mb-4 text-primary-500 ${genos.className} text-xl md:text-2xl lg:text-3xl font-bold`}
-  >
-    {props.content}
-  </h2>
-);
-
-const SubtitleH3 = (props: { content: string }) => (
-  <h3
-    className={`text-3xl font-bold mb-4 text-txt-300 ${genos.className} text-xl md:text-2xl lg:text-3xl font-medium`}
-  >
-    {props.content}
-  </h3>
-);
-
-const TextP = (props: { children: React.ReactNode }) => (
-  <p className="text-sm md:text-base leading-relaxed mb-4">{props.children}</p>
-);
-
-const Strong = (props: { children: React.ReactNode }) => (
-  <strong className="font-bold">{props.children}</strong>
-);
-
-const CodeInline = (props: { children: React.ReactNode }) => (
-  <code className="bg-primary-500/20 px-2 py-1 rounded font-mono text-sm">
-    {props.children}
-  </code>
-);
-
-const HighlightBox = (props: { children: React.ReactNode }) => (
-  <div className="text-sm md:text-base leading-relaxed font-semibold bg-secondary/20 p-4 rounded-md my-6">
-    {props.children}
-  </div>
-);
-
-// --- Componente Principal ---
 
 export default function Module1() {
   return (
     <div className={`sh-container py-8 md:py-12 xl:py-16 ${inter.className}`}>
-      <h1
-        className={`text-center bg-clip-text text-transparent bg-gradient-to-t text-3xl font-bold mb-12 md:bg-gradient-to-tl from-secondary via-white to-primary-500 ${genos.className} text-3xl md:text-4xl lg:text-5xl font-bold`}
-      >
-        Módulo 1: Fundamentos de los Bundlers (El &quot;Por Qué&quot;)
-      </h1>
+      <TitleH1 content='Módulo 1: Fundamentos de los Bundlers (El "Por Qué")' />
 
       {/* --- SECCIÓN 1: QUÉ ES UN BUNDLER --- */}
       <section className="mb-12">
