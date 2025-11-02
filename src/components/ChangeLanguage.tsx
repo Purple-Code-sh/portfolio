@@ -5,6 +5,7 @@ import { usePathname, useRouter } from "@/i18n/navigation";
 import { ChevronDown } from "lucide-react";
 import USFlag from "country-flag-icons/react/3x2/US";
 import MXFlag from "country-flag-icons/react/3x2/MX";
+import Link from "next/link";
 
 const languages = [
   {
@@ -79,14 +80,23 @@ export default function LanguageSelector() {
   }
 
   return (
-    <div
-      className="text-txt-300 relative flex justify-end pt-3 z-50 sh-container"
-      title={t("title")}
-    >
+    <div className="text-txt-300 relative flex justify-end pt-3 z-50 gap-6 sh-container">
+      <Link href="/">
+        <p className=" bg-black flex cursor-pointer items-center space-x-2 px-4 py-2 backdrop-blur-2xl transition-colors hover:text-white hover:underline duration-300">
+          Home
+        </p>
+      </Link>
+      <Link href="/blog/">
+        <p className=" bg-black flex cursor-pointer items-center space-x-2 px-4 py-2 backdrop-blur-2xl transition-colors hover:text-white hover:underline duration-300">
+          Blog
+        </p>
+      </Link>
+
       {/* Botón principal */}
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="hover:bg-neutral-700 bg-black flex cursor-pointer items-center space-x-2 rounded-full border border-white/25 px-4 py-2 backdrop-blur-2xl transition-colors duration-300"
+        title={t("title")}
       >
         <currentLanguage.Flag className="h-4 w-auto" />
         <span className="text-sm font-medium text-white capitalize">
