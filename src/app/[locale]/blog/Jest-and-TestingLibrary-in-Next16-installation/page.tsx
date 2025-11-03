@@ -219,8 +219,7 @@ describe("Home", () => {
     const linkElement = screen.getByText(/edit the page.tsx file/i);
     expect(linkElement).toBeInTheDocument();
   });
-});
-`}
+});`}
         </CodeBlock>
 
         <HighlightBox>
@@ -323,7 +322,7 @@ export default eslintConfig;`}</CodeBlock>
           Habiendo agregado el uso de los plugins a la configuracion de ESLint,
           deberíamos ver que en el archivo de test{" "}
           <CodeInline>Home.tsx</CodeInline> aparecen los errores de linter.
-          Debido a que el uso de render() dentro de before() each no es
+          Debido a que el uso de render() dentro de beforeEach() no es
           recomendado.
         </TextP>
         <HighlightBox>
@@ -332,6 +331,32 @@ export default eslintConfig;`}</CodeBlock>
           puedes hacer con: <CodeInline>Ctrl + Shift + P</CodeInline> y
           escribiendo <CodeInline>ESLint: Restart ESLint Server</CodeInline>
         </HighlightBox>
+        <TextP>
+          Para corregir los errores que indica el linter basta con quitar el uso
+          de render() dentro de beforeEach(). Y en su lugar agregarlo dentro de
+          cada test individual. Lo que haria que nuestro archivo Home.tsx de
+          test se vea así:
+        </TextP>
+        <CodeBlock>
+          {`import { render, screen } from "@testing-library/react";
+import Home from "../../app/page";
+
+describe("Home", () => {
+  beforeEach(() => {});
+
+  it("Should renders 'Templates'", () => {
+    render(<Home />);
+    const linkElement = screen.getByText("Templates");
+    expect(linkElement).toBeInTheDocument();
+  });
+
+  it("Should renders 'Edit the page.tsx file'", () => {
+    render(<Home />);
+    const linkElement = screen.getByText(/edit the page.tsx file/i);
+    expect(linkElement).toBeInTheDocument();
+  });
+});`}
+        </CodeBlock>
       </section>
     </div>
   );
