@@ -8,6 +8,7 @@ import {
   TitleH1,
   CodeBlock,
 } from "@/app/[locale]/utils/blog-text-styles";
+import { Code } from "lucide-react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
@@ -243,12 +244,94 @@ describe("Home", () => {
         </TextP>
       </section>
 
-      {/* --- SECCIÓN 4: DESARROLLO VS. PRODUCCIÓN --- */}
+      {/* --- SECCIÓN 4 --- */}
       <section className="mb-12">
-        <SubtitleH2 content="4. Desarrollo vs. Producción" />
+        <SubtitleH2 content="4. Agregar linter a los archivos de test. Configuración de ESLint" />
         <TextP>
-          Un bundler tiene dos modos de operación con objetivos opuestos.
+          Al escribir un test es de utilidad tener reglas para mantener un
+          código limpio y correcto. Para ello, debemos configurar ESLint e
+          instalar los plugins necesarios que nos ayudaran a implementar el
+          linter en nuestros archivos de testing.
         </TextP>
+        <TextP>
+          Primeramente instalaremos los plugins, lo cual se hace con el
+          siguiente comando:
+        </TextP>
+        <CodeBlock>{`npm install -D eslint-plugin-jest-dom eslint-plugin-testing-library`}</CodeBlock>
+        <SubtitleH3 content="Configuración de ESLint (flat config file)" />
+        <TextP>
+          Normalmente, la configuracion de ESLint se hace en un archivo llamado{" "}
+          <CodeInline>.eslintrc.js</CodeInline> en la raíz del proyecto.
+          <br />
+          Pero desde la versión 9.0.0 de ESLint, se puede configurar en un
+          archivo llamado <CodeInline>eslint.config.js</CodeInline>, tambien en
+          la raíz del proyecto. El cual{" "}
+          <a
+            href="https://eslint.org/docs/latest/use/configure/migration-guide"
+            className="underline font-bold"
+            target="_blank"
+          >
+            se configura de forma distinta
+          </a>{" "}
+          a lo que se hacia previamente con eslintrc.js.
+          <br />
+          La ultima version de Next usa la nueva configuracion de ESLint (Flat
+          Config File) mediante el archivo{" "}
+          <CodeInline>eslint.config.mjs</CodeInline>. Pero a continuacion, se
+          muestran ambos ejemplos, para que puedas usarlos segun sea tu caso.
+        </TextP>
+        <TextP>
+          <Strong>
+            Configuracion de ESLint (Flat Config File) para Next.js v16:
+          </Strong>
+        </TextP>
+        <CodeBlock>{`import { defineConfig, globalIgnores } from "eslint/config";
+import nextVitals from "eslint-config-next/core-web-vitals";
+import nextTs from "eslint-config-next/typescript";
+
+// These are the two imports for the plugins that we installed for linter in testing files.
+import testingLibrary from "eslint-plugin-testing-library";
+import jestDom from "eslint-plugin-jest-dom";
+
+const eslintConfig = defineConfig([
+  ...nextVitals,
+  ...nextTs,
+  globalIgnores([".next/**", "out/**", "build/**", "next-env.d.ts"]),
+  // This is the config for the plugins for testing files.
+  {
+    files: ["**/__tests__/**/*.tsx", "**/*.test.ts", "**/*.spec.ts"],
+    ...jestDom.configs["flat/recommended"],
+    ...testingLibrary.configs["flat/react"],
+  },
+]);
+
+export default eslintConfig;`}</CodeBlock>
+        <TextP>
+          <Strong>
+            Configuracion de ESLint (.eslintrc.json) para versiones anteriores:
+          </Strong>
+        </TextP>
+        <CodeBlock>{`{
+  "extends": [
+    "next/core-web-vitals",
+    // This is the config for the plugins for testing files.
+    "plugin:testing-library/react",
+    "plugin:jest-dom/recommended"
+  ]
+}`}</CodeBlock>
+        <TextP>
+          Habiendo agregado el uso de los plugins a la configuracion de ESLint,
+          deberíamos ver que en el archivo de test{" "}
+          <CodeInline>Home.tsx</CodeInline> aparecen los errores de linter.
+          Debido a que el uso de render() dentro de before() each no es
+          recomendado.
+        </TextP>
+        <HighlightBox>
+          En dado caso de que no se aplique la configuracion de ESLint en tu
+          editor de codigo, puedes reiniciar el servidor de ESLint. En VSCode lo
+          puedes hacer con: <CodeInline>Ctrl + Shift + P</CodeInline> y
+          escribiendo <CodeInline>ESLint: Restart ESLint Server</CodeInline>
+        </HighlightBox>
       </section>
     </div>
   );
