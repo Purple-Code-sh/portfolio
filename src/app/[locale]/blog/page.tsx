@@ -21,6 +21,10 @@ const BLOG_ITEMS: {
     name: "Bundlers y Migración de React",
     url: "/blog/Bundlers-and-React-migration",
   },
+  jestAndTestingLibraryInNext16: {
+    name: "Instalación de Jest y React Testing Library en Next v16",
+    url: "/blog/Jest-and-TestingLibrary-in-Next16-installation",
+  },
 };
 
 export default function Blogs() {
