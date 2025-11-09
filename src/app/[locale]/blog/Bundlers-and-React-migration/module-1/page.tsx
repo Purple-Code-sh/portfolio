@@ -342,7 +342,7 @@ export default function Module1() {
 
         <HighlightBox>
           Estos archivos en la carpeta <CodeInline>dist</CodeInline> son los que
-          despliegas en un servidor web (como los que hicimos con Express).
+          despliegas en un servidor web (uno creado con Express por ejemplo).
         </HighlightBox>
       </section>
     </div>
