@@ -10,9 +10,9 @@ export default function HomePage() {
       <Hero />
 
       <section className="sh-container">
-        <PagesCreated />
-        <Separator />
         <ImportantProjects />
+        <Separator />
+        <PagesCreated />
         <Separator />
         <UnderConstruction />
       </section>
