@@ -17,12 +17,13 @@ export default function ParallaxBg() {
   return (
     <section className="absolute inset-0 ">
       <div className="relative overflow-hidden h-screen ">
-        {/* Background */}
-        <div className="bg-[url('/bg-grany-2.webp')] mix-blend-difference opacity-75 bg-cover absolute inset-0 bg-top-left bg-no-repeat -z-10" />
+        {/* Backgrounds */}
+        <div className="bg-[linear-gradient(to_bottom,rgba(11,17,13,0),rgba(0,0,0,1)),url('/fondo-2.jpg')] mix-blend-difference bg-contain absolute inset-0 bg-top-left bg-no-repeat -z-10" />
+        <div className="bg-[url('/fondo-1.jpg')] mix-blend-difference opacity-[2%] bg-contain absolute inset-0 bg-top-left bg-no-repeat -z-10" />
 
         <div className="w-full h-11/12 lg:w-3/4 lg:top-0 lg:right-0 absolute bottom-0">
           <div className="relative h-full w-full bg-transparent p-8">
-            <div className="absolute bottom-4 right-4 z-30 w-auto rounded-md hidden lg:block bg-shBlack py-2 px-5 text-sm text-txt-300/60">
+            <div className="absolute bottom-4 right-4 z-30 w-auto rounded-md hidden lg:block bg-shBlack border border-primary-500/50 py-2 xl:py-3 px-5 text-sm text-txt-300/60">
               <div className="flex items-center justify-end gap-1">
                 <span>{t("hold")}</span>
                 <span className="font-bold text-txt-300/70">{t("shift")}</span>
@@ -44,15 +45,7 @@ export default function ParallaxBg() {
               </div>
             </div>
 
-            <div className="absolute bottom-4 right-4 z-30 w-auto lg:hidden rounded-md bg-shBlack px-6 py-2 text-[9px] sm:text-xs text-txt-300/60">
-              {/* <div className="flex items-center justify-end gap-2">
-                <span className="font-medium text-txt-300/70">
-                  {t("orbit")}
-                </span>
-                <span className="text-txt-300/50">{t("twoFingers")}</span>
-                <Rotate3d size={14} className="text-txt-300/70" />
-              </div> */}
-
+            <div className="absolute bottom-4 right-4 z-30 w-auto lg:hidden rounded-md border border-primary-500/50 bg-shBlack px-6 py-2 text-[9px] sm:text-xs text-txt-300/60">
               <div className="mt-1 flex items-center justify-end gap-2">
                 <span className="font-medium text-txt-300/70">{t("zoom")}</span>
                 <span className="text-txt-300/50">{t("pinching")}</span>
