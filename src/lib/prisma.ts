@@ -4,7 +4,9 @@ import { withAccelerate } from "@prisma/extension-accelerate";
 
 // This function creates the extended Prisma client
 const prismaClientSingleton = () => {
-  return new PrismaClient().$extends(withAccelerate());
+  return new PrismaClient({
+    accelerateUrl: process.env.PRISMA_DATABASE_URL,
+  }).$extends(withAccelerate());
 };
 
 // We get the exact type of the extended client using TypeScript's ReturnType

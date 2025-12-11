@@ -6,6 +6,6 @@ import "dotenv/config";
 export default defineConfig({
   schema: "prisma/schema.prisma",
   datasource: {
-    url: env("PRISMA_DATABASE_URL"),
+    url: env("POSTGRES_URL"),
   },
 });

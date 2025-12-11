@@ -80,7 +80,7 @@ function getPreferredLocaleFromCookie(request: NextRequest): string | null {
   return null;
 }
 
-export default async function middleware(request: NextRequest) {
+export default async function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
   // Verificar si la URL ya tiene un locale
