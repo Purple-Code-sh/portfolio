@@ -19,7 +19,7 @@ export default function ParallaxBg() {
       <div className="relative overflow-hidden h-screen ">
         {/* Backgrounds */}
         <div className="bg-[linear-gradient(to_bottom,rgba(11,17,13,0),rgba(0,0,0,1)),url('/fondo-2.jpg')] mix-blend-difference bg-contain absolute inset-0 bg-top-left bg-no-repeat -z-10" />
-        <div className="bg-[url('/fondo-1.jpg')] mix-blend-difference opacity-[2%] bg-contain absolute inset-0 bg-top-left bg-no-repeat -z-10" />
+        <div className="bg-[url('/fondo-1.jpg')] mix-blend-difference opacity-[3%] bg-contain absolute inset-0 bg-top-left bg-no-repeat -z-10" />
 
         <div className="w-full h-11/12 lg:w-3/4 lg:top-0 lg:right-0 absolute bottom-0">
           <div className="relative h-full w-full bg-transparent p-8">
